@@ -1,0 +1,15 @@
+$mobile-min-width: 768px;
+$table-min-width: 992px;
+$desk-min-width: 1200px;
+
+$mobile-width: 750px;
+$table-width: 970px;
+$desk-width: 1170px;
+
+$gray: gray;
+$white: white;
+$background-gray:transparentize($gray,0.95);
+$dropshadow-nav:5px 5px 5px transparentize(black,0.9);
+$border-hr:1px solid $gray;
+$border:$border-hr;
+$background-color-lable:$white;

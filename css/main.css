@@ -1,0 +1,88 @@
+body {
+  background-color: rgba(128, 128, 128, 0.05);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px; } }
+
+.connect-box {
+  padding: 20px 10px; }
+
+.card {
+  width: 33.33333%;
+  float: left; }
+  .card img {
+    box-sizing: border-box;
+    padding: 2em;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .card figcaption {
+    text-align: center;
+    font-size: 1.2em;
+    padding-top: 0; }
+
+.scroll-down {
+  text-align: center;
+  margin-top: 6em;
+  margin-bottom: 6em; }
+  .scroll-down a {
+    display: inline-block;
+    border: 1px solid gray;
+    padding: 0.5em 2em;
+    background-color: white;
+    margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+
+.nav {
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: inline; }
+  .nav .logo {
+    float: left;
+    display: inline; }
+  .nav ul {
+    display: inline;
+    float: right;
+    margin-top: 35px; }
+    .nav ul li {
+      list-style-type: none;
+      display: inline;
+      padding: 10px 15px; }
+
+.welcome {
+  box-sizing: border-box;
+  margin-top: 6em;
+  margin-bottom: 6em;
+  text-align: center; }
+  .welcome h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3em;
+    padding: 1em 1.5em 0; }
+  .welcome h3 {
+    font-size: 1.7em;
+    padding: 0.5em 3em;
+    line-height: 1.5em; }
+
+/*# sourceMappingURL=main.css.map */

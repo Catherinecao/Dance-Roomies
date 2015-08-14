@@ -1,0 +1,27 @@
+.nav{
+	background-color:$white;
+	box-shadow:$dropshadow-nav;
+	width:100%;
+	position:fixed;
+	top:0;
+	z-index:10;
+	display:inline;
+
+	.logo{
+		float: left;
+		display: inline;
+	}
+	
+
+	ul{
+		display: inline;
+		float: right;
+		margin-top:35px;
+
+		li{
+			list-style-type: none;
+			display: inline;
+			padding: 10px 15px;
+		}
+	}
+}
