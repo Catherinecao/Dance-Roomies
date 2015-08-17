@@ -14,9 +14,14 @@
 	
 
 	ul{
-		display: inline;
 		float: right;
 		margin-top:35px;
+		@media (min-width:$mobile-min-width) {
+		    display: none;
+		}
+		@media (min-width:$tablet-min-width) {
+			display: inline;
+		}
 
 		li{
 			list-style-type: none;

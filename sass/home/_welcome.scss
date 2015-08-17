@@ -1,19 +1,54 @@
 .welcome{
 	box-sizing:border-box;
-	margin-top:6em;
-	margin-bottom:6em;
 	text-align:center;
+
+	@media (min-width:$mobile-min-width) {
+	    margin-top:percentage(40/320);
+	}
+	@media (min-width:$tablet-min-width) {
+		margin-top:percentage(40/640);
+	} 
+	@media (min-width:$desk-min-width) {
+		margin-top:percentage(60/960);
+	}
+
 
 	h1{
 		text-align: center;
-		margin-top:50px;
-		font-size: 3em;
 		padding: 1em 1.5em 0;
+
+		@media (min-width:$mobile-min-width) {
+		    font-size: 2.5em;
+		}
+		@media (min-width:$desk-min-width) {
+		    font-size: 3em;
+		}
 	}
 
 	h3{
-		font-size: 1.7em;
-		padding:0.5em 3em;
+		padding:0.5em 3em 0;
 		line-height: 1.5em;
+
+		@media (min-width:$mobile-min-width) {
+		    font-size: 1.3em;
+		}
+		@media (min-width:$tablet-min-width) {
+		    font-size: 1.5em;
+		}
+		@media (min-width:$tablet-min-width) {
+		    font-size: 1.7em;
+		}
+	}
+
+	.w-connect-1{
+		@media (min-width:$mobile-min-width) {
+		    display: none;
+		}
+		@media (min-width:$tablet-min-width) {
+		    display: none;
+		}
+		@media (min-width:$desk-min-width) {
+		    display: block;
+		}
 	}
 }
