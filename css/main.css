@@ -7,6 +7,13 @@ body {
 a {
   text-decoration: none; }
 
+figure {
+  display: inline-block;
+  margin: 0; }
+
+input {
+  font-size: 1em; }
+
 .container {
   box-sizing: border-box;
   margin: auto; }
@@ -15,10 +22,10 @@ a {
       padding: 0 3.125%; } }
   @media (min-width: 750px) {
     .container {
-      padding: 0 1.5625%; } }
+      padding: 0 3.125%; } }
   @media (min-width: 1050px) {
     .container {
-      padding: 0 1.04167%;
+      padding: 0 2.08333%;
       max-width: 1280px; } }
 
 @media (min-width: 320px) {
@@ -31,56 +38,60 @@ a {
   .connect-box {
     padding: 2.08333% 1.04167% 0; } }
 
-.cards {
+.what-dose-it-do {
   box-sizing: border-box;
-  width: 100%; }
-  .cards .card {
-    float: left; }
+  width: 100%;
+  display: inline-block; }
+  .what-dose-it-do .card {
+    float: left;
+    box-sizing: border-box; }
     @media (min-width: 320px) {
-      .cards .card {
+      .what-dose-it-do .card {
         width: 100%;
-        margin-bottom: 6.25%; } }
+        margin-bottom: 6.25%;
+        padding: 0 10px; } }
     @media (min-width: 750px) {
-      .cards .card {
-        width: 33.33333%;
-        margin-bottom: 0; } }
-    @media (min-width: 1050px) {
-      .cards .card {
+      .what-dose-it-do .card {
         width: 33.33333%;
         margin-bottom: 0;
-        padding: 0 1.04167%;
+        padding: 0 15px; } }
+    @media (min-width: 1050px) {
+      .what-dose-it-do .card {
+        width: 33.33333%;
+        margin-bottom: 0;
+        padding: 0 30px;
         box-sizing: border-box; } }
-    .cards .card .card-img {
+    .what-dose-it-do .card .card-img {
       box-sizing: border-box; }
       @media (min-width: 320px) {
-        .cards .card .card-img {
+        .what-dose-it-do .card .card-img {
           width: 33.33333%;
           float: left; } }
       @media (min-width: 750px) {
-        .cards .card .card-img {
+        .what-dose-it-do .card .card-img {
           float: none;
           width: 100%;
           margin: auto; } }
       @media (min-width: 1050px) {
-        .cards .card .card-img {
+        .what-dose-it-do .card .card-img {
           width: 100%;
           margin: auto; } }
-      .cards .card .card-img img {
+      .what-dose-it-do .card .card-img img {
         width: 100%;
         height: 100%;
         border-radius: 50%; }
-    .cards .card figcaption {
+    .what-dose-it-do .card figcaption {
       font-size: 1.2em;
       box-sizing: border-box; }
       @media (min-width: 320px) {
-        .cards .card figcaption {
+        .what-dose-it-do .card figcaption {
           width: 66.66667%;
           float: right;
           text-align: left;
           padding-left: 6.25%;
           padding-top: 6.25%; } }
       @media (min-width: 750px) {
-        .cards .card figcaption {
+        .what-dose-it-do .card figcaption {
           width: 100%;
           text-align: center;
           float: none;
@@ -90,8 +101,12 @@ a {
 .scroll-down {
   display: block;
   text-align: center;
-  margin-top: 6em;
-  margin-bottom: 6em; }
+  margin-top: 4em;
+  margin-bottom: 4em; }
+  @media (min-width: 1050px) {
+    .scroll-down {
+      margin-top: 6em;
+      margin-bottom: 6em; } }
   .scroll-down a {
     display: inline-block;
     border: 1px solid gray;
@@ -157,13 +172,14 @@ a {
   position: fixed;
   top: 0;
   z-index: 10;
-  display: inline; }
+  display: inline-block; }
   .nav .logo {
     float: left;
-    display: inline; }
+    display: block; }
   .nav ul {
     float: right;
-    margin-top: 35px; }
+    margin-top: 25px;
+    padding-left: 0; }
     @media (min-width: 320px) {
       .nav ul {
         display: none; } }
@@ -173,7 +189,20 @@ a {
     .nav ul li {
       list-style-type: none;
       display: inline;
-      padding: 10px 15px; }
+      padding-left: 15px; }
+
+.search {
+  display: inline-block;
+  border-radius: 15px;
+  border: 1px solid rgba(128, 128, 128, 0.05);
+  padding: 5px 10px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2) inset; }
+
+.form-control {
+  border: 0; }
+
+.fa-search {
+  color: rgba(0, 0, 0, 0.3); }
 
 .welcome {
   box-sizing: border-box;

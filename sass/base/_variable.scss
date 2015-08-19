@@ -6,9 +6,12 @@ $mobile-width: 320px;
 $tablet-width: 640px;
 $desk-width: 960px;
 
+$default-0:0 !default;
 
 $gray: gray;
 $white: white;
+$light-gray:transparentize($gray,0.95);
+$dark-gray:darken($gray, 10%);
 $background-gray:transparentize($gray,0.95);
 $dropshadow-nav:1px 8px 10px transparentize(black,0.8);
 $border-hr:1px solid $gray;
