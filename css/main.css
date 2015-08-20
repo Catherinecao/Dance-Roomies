@@ -38,60 +38,60 @@ input {
   .connect-box {
     padding: 2.08333% 1.04167% 0; } }
 
-.what-dose-it-do {
+.what-does-it-do {
   box-sizing: border-box;
   width: 100%;
   display: inline-block; }
-  .what-dose-it-do .card {
+  .what-does-it-do .card {
     float: left;
     box-sizing: border-box; }
     @media (min-width: 320px) {
-      .what-dose-it-do .card {
+      .what-does-it-do .card {
         width: 100%;
         margin-bottom: 6.25%;
         padding: 0 10px; } }
     @media (min-width: 750px) {
-      .what-dose-it-do .card {
+      .what-does-it-do .card {
         width: 33.33333%;
         margin-bottom: 0;
         padding: 0 15px; } }
     @media (min-width: 1050px) {
-      .what-dose-it-do .card {
+      .what-does-it-do .card {
         width: 33.33333%;
         margin-bottom: 0;
         padding: 0 30px;
         box-sizing: border-box; } }
-    .what-dose-it-do .card .card-img {
+    .what-does-it-do .card .card-img {
       box-sizing: border-box; }
       @media (min-width: 320px) {
-        .what-dose-it-do .card .card-img {
+        .what-does-it-do .card .card-img {
           width: 33.33333%;
           float: left; } }
       @media (min-width: 750px) {
-        .what-dose-it-do .card .card-img {
+        .what-does-it-do .card .card-img {
           float: none;
           width: 100%;
           margin: auto; } }
       @media (min-width: 1050px) {
-        .what-dose-it-do .card .card-img {
+        .what-does-it-do .card .card-img {
           width: 100%;
           margin: auto; } }
-      .what-dose-it-do .card .card-img img {
+      .what-does-it-do .card .card-img img {
         width: 100%;
         height: 100%;
         border-radius: 50%; }
-    .what-dose-it-do .card figcaption {
+    .what-does-it-do .card figcaption {
       font-size: 1.2em;
       box-sizing: border-box; }
       @media (min-width: 320px) {
-        .what-dose-it-do .card figcaption {
+        .what-does-it-do .card figcaption {
           width: 66.66667%;
           float: right;
           text-align: left;
           padding-left: 6.25%;
           padding-top: 6.25%; } }
       @media (min-width: 750px) {
-        .what-dose-it-do .card figcaption {
+        .what-does-it-do .card figcaption {
           width: 100%;
           text-align: center;
           float: none;
@@ -101,8 +101,12 @@ input {
 .scroll-down {
   display: block;
   text-align: center;
-  margin-top: 4em;
-  margin-bottom: 4em; }
+  margin-top: 3em;
+  margin-bottom: 3em; }
+  @media (min-width: 750px) {
+    .scroll-down {
+      margin-top: 4em;
+      margin-bottom: 4em; } }
   @media (min-width: 1050px) {
     .scroll-down {
       margin-top: 6em;
@@ -206,25 +210,29 @@ input {
 
 .welcome {
   box-sizing: border-box;
-  text-align: center; }
+  text-align: center;
+  padding: 1em; }
   @media (min-width: 320px) {
     .welcome {
-      margin-top: 12.5%; } }
+      margin-top: 25%;
+      margin-left: 0em;
+      margin-right: 0em; } }
   @media (min-width: 750px) {
     .welcome {
-      margin-top: 6.25%; } }
+      margin-top: 15.625%;
+      margin-left: 3em;
+      margin-right: 3em; } }
   @media (min-width: 1050px) {
     .welcome {
-      margin-top: 6.25%; } }
+      margin-top: 10.41667%; } }
   .welcome h1 {
-    text-align: center;
-    padding: 1em 1.5em 0; }
+    text-align: center; }
     @media (min-width: 320px) {
       .welcome h1 {
         font-size: 2.5em; } }
     @media (min-width: 1050px) {
       .welcome h1 {
-        font-size: 3em; } }
+        font-size: 3.5em; } }
   .welcome h3 {
     padding: 0.5em 3em 0;
     line-height: 1.5em; }

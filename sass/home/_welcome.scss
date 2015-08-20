@@ -1,27 +1,35 @@
 .welcome{
 	box-sizing:border-box;
 	text-align:center;
+	// border:$border-text;
+	padding:1em;
 
 	@media (min-width:$mobile-min-width) {
-	    margin-top:percentage(40/320);
+	    margin-top:percentage(80/320);
+	    margin-left:0em;
+		margin-right:0em;
+
 	}
 	@media (min-width:$tablet-min-width) {
-		margin-top:percentage(40/640);
+		margin-top:percentage(100/640);
+		margin-left:3em;
+		margin-right:3em;
 	} 
 	@media (min-width:$desk-min-width) {
-		margin-top:percentage(60/960);
+		margin-top:percentage(100/960);
+
 	}
 
 
 	h1{
 		text-align: center;
-		padding: 1em 1.5em 0;
+		
 
 		@media (min-width:$mobile-min-width) {
 		    font-size: 2.5em;
 		}
 		@media (min-width:$desk-min-width) {
-		    font-size: 3em;
+		    font-size: 3.5em;
 		}
 	}
 
