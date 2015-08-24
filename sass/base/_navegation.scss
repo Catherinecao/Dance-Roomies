@@ -1,0 +1,26 @@
+.navbar{
+	background-color:$white;
+	box-shadow:$dropshadow-nav;
+
+	.iterm{
+		display: none;
+		@media (min-width:$tablet-min-width){
+			display: inline;
+		}
+	}
+}
+
+.search{
+	display:inline-block;
+	border-radius: 20px;
+	border:1px solid $light-gray;
+	padding: 5px 5px;
+	box-shadow:1px 1px 4px transparentize(black,0.8) inset;	
+}
+.form-control{
+	border:0;
+}
+.fa-search{
+	color:transparentize(black,0.7);
+}
+

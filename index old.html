@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Dance Roomies</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -12,37 +11,24 @@
 
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Dance Roomies</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-right navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Explore <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Register</a></li>
-        <li><a href="#">Sign In</a></li>
-
-      </ul>
-      <form class="navbar-form navbar-right" role="search">
-        <div class="form-group search">
-          <i type="submit" class="fa fa-search"></i>
-          <input type="text" class="form-control" placeholder="Search">
-          
-        </div>
-      </form>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+<header class="nav navbar-static-top clearfix">
+	<div class="container">
+		<div class="logo">
+			<h2>Dance Roomies</h2>
+		</div>
+		<ul class="nav-iterms">
+			<li>
+				<div class="search">
+					<i class="fa fa-search"></i>
+					<input type="text" class="form-control">
+				</div>
+			</li>
+			<li class="iterm"><a href="#">Explore</a></li>
+			<li class="iterm"><a href="#">Register</a></li>
+			<li><a href="#">Sign In</a></li>
+		</ul>
+	</div><!-- /.container -->
+</header><!-- /.nav -->
 
 <main>
 	<div class="container">
@@ -145,7 +131,6 @@
 
 <script src="js/vendor/jquery-2.1.4.min.js"></script>
 <script src="js/vendor/jquery.transit.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="js/vendor/velocity.min.js"></script>
 <script src="js/main.js"></script>	
 </body>
