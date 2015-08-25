@@ -12,6 +12,8 @@ $gray: gray;
 $white: white;
 $light-gray:transparentize($gray,0.95);
 $dark-gray:darken($gray, 10%);
+
+$background-color-start:$dark-gray;
 $background-gray:transparentize($gray,0.95);
 $dropshadow-nav:1px 8px 10px transparentize(black,0.8);
 $border-hr:1px solid $gray;

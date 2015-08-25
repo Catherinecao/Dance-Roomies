@@ -1,29 +1,31 @@
 $(document).ready(function(){
-	var $scrollBtn1 = $('#w-d-i-d'),
-		$scrollBtn2 = $('#h-d-i-w'),
-		// $scrollSection = $('.section'),
-		$scrollSection1 = $('#w-d-i-d'),
-		$scrollSection2 = $('#h-d-i-w'),
+	var $signInBtn = $('#sign-in'),
+		$introBtn = $('#w-i-d-r'),
+		$scrollSection = $('.what-is-dance-roomies'),
 		scrollTime = 400;
 
-		$scrollBtn1.click(function(e){
+		//initial
+		$scrollSection.hide();
+
+		$signInBtn.click(function(e){
 			e.preventDefault();
-			// scroll to .what dose it do
-			scrollToW();	
+			// sign in page
+			// scrollToW();	
 		});
 
-		$scrollBtn2.click(function(e){
+		$introBtn.click(function(e){
 			e.preventDefault();
 			// scroll to .how dose it work
-			scrollToH();
+			scrollToIntro();
 		});
 
-		function scrollToW(){
-			$scrollSection1.velocity("scroll", { duration: scrollTime, easing: "easeInOutQuart" ,offset:-120})
-		}
+		// function scrollToW(){
+		// 	$scrollSection1.velocity("scroll", { duration: scrollTime, easing: "easeInOutQuart" ,offset:-120})
+		// }
 
-		function scrollToH(){
-			$scrollSection2.velocity("scroll", { duration: scrollTime, easing: "easeInOutQuart" ,offset:-120})
-		}
+		function scrollToIntro(){
+			$scrollSection.show().velocity("scroll", { duration: scrollTime, easing: "easeInOutQuart" ,offset:-120})
+		};
+		
 
 });
