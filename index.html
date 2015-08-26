@@ -12,7 +12,7 @@
 
 </head>
 <body>
-<nav class="navbar navbar-default navbar-static-top">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -27,84 +27,97 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-right navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Explore <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Register</a></li>
-        <li><a href="#">Sign In</a></li>
-
-      </ul>
-      <form class="navbar-form navbar-right" role="search">
+      <form class="navbar-form navbar-left" role="search">
         <div class="form-group search">
           <i type="submit" class="fa fa-search"></i>
           <input type="text" class="form-control" placeholder="Search"> 
         </div>
       </form>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Explore <span class="sr-only">(current)</span></a></li>
+        <li><a href="#" id="guest">Register</a></li>
+        <li><a href="#" id="guest">Sign In</a></li>
+      </ul>
+      
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
-<main class="container">
-	<div class="col-md-12">
-		<h1>Welcome to Dance Roomies</h1>
-		<h3>Dance Roomies is a social network created by dancers for dancers to connect, share and to help enrich their dance experience.</h3>
-		<h3 class="d-show">
+<main>
+	<div class="col-md-12 content">
+		<div class="container">
+			<h1>Welcome to Dance Roomies</h1>
+			<h3>Dance Roomies is a social network created by dancers for dancers to connect, share and to help enrich their dance experience.</h3>
+			<h3 class="d-show">
 			Connect with other dancers around the world and find new friends to share not just accommodation but all the wonderful experiences that dance festivals bring
-		</h3>
+			</h3>
+		</div>
 	</div>
 
-	<botton class="btn col-md-6 col-md-offset-3">
-		<a href="#" id="sign-in">Start your journey</a>
-	</botton>
+	<div class="col-md-12">
+		<a class="btn" href="#" id="sign-in">Start your journey</a>
+	</div>
 
-	<botton class="btn col-md-6 col-md-offset-3">
-		<a href="#" id="w-i-d-r">What is Dance Roomies</a>
-	</botton>
+	<div class="col-md-12">
+		<a class="btn w-i-d-r" href="#" id="w-i-d-r">What is Dance Roomies</a>
+	</div>
 
-	<div class="what-is-dance-roomies row">
-		<div class="col-sm-12">
-			<div class="col-sm-4">
-				<img class="img-circle" src="img/Two_dancers.jpg" alt="">
+	<div class="what-is-dance-roomies clearfix">
+			
+			<div class="col-sm-12 section">
+				<div class="container">
+					<div class="col-sm-4">
+						<img class="img-circle" src="img/Two_dancers.jpg" alt="">
+					</div>
+					<div class="col-sm-8">
+						<h3>Build your personal page</h3>
+						<hr>
+						<p>Search<br>schedule<br>plan for dance events</p>
+					</div>
+				</div>	
 			</div>
-			<div class="col-sm-8">
-				<h3>Build your personal page</h3>
-				<p>Search<br>schedule<br>plan for dance events</p>
-			</div>	
-		</div>
-
-		<div class="col-sm-12 reverse">
-			<div class="col-sm-4">
-				<img class="img-circle" src="img/Two_dancers.jpg" alt="">
+			<div class="col-sm-12 reverse">
+				<div class="container">
+					<div class="col-sm-4">
+						<img class="img-circle" src="img/Two_dancers.jpg" alt="">
+					</div>
+					<div class="col-sm-8">
+						<h3>Build your personal page</h3>
+						<hr>
+						<p>Search<br>schedule<br>plan for dance events</p>
+					</div>
+				</div>	
 			</div>
-			<div class="col-sm-8">
-				<h3>Build your personal page</h3>
-				<p>Search<br>schedule<br>plan for dance events</p>
-			</div>	
-		</div>
-		<div class="col-sm-12">
-			<div class="col-sm-4">
-				<img class="img-circle" src="img/Two_dancers.jpg" alt="">
+			<div class="col-sm-12">
+				<div class="container">
+					<div class="col-sm-4">
+						<img class="img-circle" src="img/Two_dancers.jpg" alt="">
+					</div>
+					<div class="col-sm-8">
+						<h3>Build your personal page</h3>
+						<hr>
+						<p>Search<br>schedule<br>plan for dance events</p>
+					</div>
+				</div>	
 			</div>
-			<div class="col-sm-8">
-				<h3>Build your personal page</h3>
-				<p>Search<br>schedule<br>plan for dance events</p>
-			</div>	
-		</div>
-		<div class="col-sm-12 reverse">
-			<div class="col-sm-4">
-				<img class="img-circle" src="img/Two_dancers.jpg" alt="">
+			<div class="col-sm-12 reverse">
+				<div class="container">
+					<div class="col-sm-4">
+						<img class="img-circle" src="img/Two_dancers.jpg" alt="">
+					</div>
+					<div class="col-sm-8">
+						<h3>Build your personal page</h3>
+						<hr>
+						<p>Search<br>schedule<br>plan for dance events</p>
+					</div>
+				</div>	
 			</div>
-			<div class="col-sm-8">
-				<h3>Build your personal page</h3>
-				<p>Search<br>schedule<br>plan for dance events</p>
-			</div>	
-		</div>
 
-		
-
-		<div class="col-sm-12">
-			<botton class="btn col-md-6 col-md-offset-3">
-				<a href="#" id="sign-in" class="semi-circle">Start your journey</a>
-			</botton>
+		<div class="col-lg-12">
+			<div class="container"></div>
+			<a href="#" class="half-circle">Start your<br>journey now!</a>
+			</div>
 		</div>	
 	</div>
 

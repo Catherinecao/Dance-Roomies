@@ -2,6 +2,7 @@ $(document).ready(function(){
 	var $signInBtn = $('#sign-in'),
 		$introBtn = $('#w-i-d-r'),
 		$scrollSection = $('.what-is-dance-roomies'),
+		navHeight = $('.navbar').height(),
 		scrollTime = 400;
 
 		//initial
@@ -19,12 +20,9 @@ $(document).ready(function(){
 			scrollToIntro();
 		});
 
-		// function scrollToW(){
-		// 	$scrollSection1.velocity("scroll", { duration: scrollTime, easing: "easeInOutQuart" ,offset:-120})
-		// }
 
 		function scrollToIntro(){
-			$scrollSection.show().velocity("scroll", { duration: scrollTime, easing: "easeInOutQuart" ,offset:-120})
+			$scrollSection.show().velocity("scroll", { duration: scrollTime, easing: "easeInOutQuart" ,offset:-navHeight*2})
 		};
 		
 

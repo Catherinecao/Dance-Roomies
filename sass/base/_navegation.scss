@@ -1,21 +1,11 @@
 .navbar{
 	background-color:$white;
 	box-shadow:$dropshadow-nav;
-
-	.iterm{
-		display: none;
-		@media (min-width:$tablet-min-width){
-			display: inline;
-		}
-	}
-
-	.form-group{
-		vertical-align: middle;
-	}
 }
 
 .search{
 	display:inline-block;
+	width:100%;
 	border-radius: 20px;
 	border:1px solid $light-gray;
 	padding: 5px 5px;
@@ -23,14 +13,26 @@
 }
 
 .form-control{
+	width:95%;
 	border:0;
 	padding:0;
-	height:1em;
-	vertical-align: middle;
-	
+	height:1.5em;
+	box-shadow:none;
+
+	@media (min-width:$tablet-min-width){
+		height:1em;
+	}
 }
+
 .fa-search{
+	@media (min-width:$tablet-min-width){
+		padding-left:5px;
+		padding-right:5px;	
+	}
+
+	padding-top:3px;
 	color:transparentize(black,0.7);
+	float:left;
 }
 
 .navbar-form{

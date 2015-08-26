@@ -1,6 +1,6 @@
 $mobile-min-width: 320px;
-$tablet-min-width: 750px;
-$desk-min-width: 1050px;
+$tablet-min-width: 768px;
+$desk-min-width: 992px;
 
 $mobile-width: 320px;
 $tablet-width: 640px;
@@ -12,11 +12,19 @@ $gray: gray;
 $white: white;
 $light-gray:transparentize($gray,0.95);
 $dark-gray:darken($gray, 10%);
+$theme-color:#8B1D3F;
+$darker-theme:#590C1D;
 
 $background-color-start:$dark-gray;
 $background-gray:transparentize($gray,0.95);
+
 $dropshadow-nav:1px 8px 10px transparentize(black,0.8);
+$dropshadow-text:1px 2px 5px transparentize(black,0.8);
+
 $border-hr:1px solid $gray;
 $border:$border-hr;
 $border-text:8px solid $gray;
+
 $background-color-lable:$white;
+$circle-text-color:$white;
+$hr-border:2px solid transparentize($gray,0.85);

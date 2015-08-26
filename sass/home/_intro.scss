@@ -1,32 +1,60 @@
+.content{
+	padding-top:30px;
+	padding-bottom:30px;
+	background-color:$theme-color;
+	color:$white;
+	text-shadow:$dropshadow-text;
+}
+
+.col-md-12{
+  text-align: center;
+}
+
+
 .col-sm-12{
-	img{
-		width:100%;
-	}
-	margin-bottom:50px;
+
+	padding:25px auto;	
+}
+
+img{
+	width:100%;
+	margin: 10px 0;
+}
+
+.col-sm-4{
+	float:left;
 }
 
 .d-show{
 	display:none;
-	@media (min-width:$desk-min-width){
+	@media (min-width:$tablet-min-width){
 		display: block;
 	}
 }
 
-.semi-circle{
-
+.half-circle{
 	background:$background-color-start;
 	text-align:center;
-	padding:auto;
-	
+	padding-top:50px;
+	display:inline-block;
+	margin-left:auto;
+	margin-right:auto;
+
 	@include half-circle(0);
-	a{
-		text-align: center;
-		margin-top: 30px;
-	}
+
+	display: block;
+	color:$circle-text-color;
+	font-size: 2em;	
 }
 
 .reverse{
+	background-color:$gray;
+
 	.col-sm-4{
 		float:right;
 	}
+}
+.what-is-dance-roomies{
+	width:100%;
+	display:inline-block;
 }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dance Roomies</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Dance Roomies</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-right navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group search">
+          <i type="submit" class="fa fa-search"></i>
+          <input type="text" class="form-control" placeholder="Search"> 
+        </div>
+      </form>
+
+      <ul class="nav navbar-nav navbar-right user-logined">
+        <li class="active"><a href="#">Explore <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">User's Name</a></li>
+        <li><a href="#">Sign Out</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="filterBar">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-2 time">
+		<select class="form-control">
+		  <option>1</option>
+		  <option>2</option>
+		  <option>3</option>
+		  <option>4</option>
+		  <option>5</option>
+		</select>
+	</div>
+	<div class="col-sm-4 type"></div>
+	<div class="col-sm-2 location"></div>
+	<div class="col-sm-2"></div>
+</div>
+
+<main>
+	<div class="container">
+		<div class="col-sm-6">
+			<div class="col-sm-12 img">
+				<img src="img/Two_dancers.jpg" alt="">
+			</div>
+			<div class="col-sm-12 blur">
+				<h3>Auckland Salsa Ball</h3>
+				<p class="date">7.30PM Septenper12</p>
+				<p class="add">Alexandra Park Function Centre</p>
+				<p class="ticket">$25 per person <br>$250 per table (book in advance)</p>
+			</div>
+		</div>
+	</div>
+	<!-- /.container -->
+	
+
+</main>
+
+
+
+<script src="js/vendor/jquery-2.1.4.min.js"></script>
+<script src="js/vendor/jquery.transit.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/vendor/velocity.min.js"></script>
+<script src="js/main.js"></script>	
+</body>
+</html>

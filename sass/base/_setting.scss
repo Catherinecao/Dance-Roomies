@@ -2,18 +2,30 @@ body{
   background-color: $background-gray;
   box-sizing:border-box;
   margin:0;
-  padding: 0;
+  padding-top: 70px;
+}
+
+main{
+  margin-top: -20px;
 }
 
 a{
   text-decoration:none;
 }
 
+hr{
+  border:$hr-border;
+}
+
 .btn{
-  display: block;
   text-align: center;
   margin-top:3em;
   margin-bottom: 3em;
+  border:$border;
+  padding:0.5em 2em;
+  background-color: $background-color-lable;
+  white-space: normal;
+  border-radius:3px;
 
   @media (min-width:$tablet-min-width){
     margin-top:4em;
@@ -25,14 +37,11 @@ a{
     margin-bottom: 4em;
   }
 
-  a{  
-    display: inline-block;
-    border:$border;
-    padding:0.5em 2em;
-    background-color: $background-color-lable;
-    margin: 0 auto;
+  a{
+    margin:0 auto;
   }
 }
+
 ul{
   li{
     text-decoration: none;
