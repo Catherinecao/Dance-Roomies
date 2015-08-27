@@ -3,10 +3,13 @@ $(document).ready(function(){
 		$introBtn = $('#w-i-d-r'),
 		$scrollSection = $('.what-is-dance-roomies'),
 		navHeight = $('.navbar').height(),
+		$loginPage = $('.login'),
+		filterHeight = $('.filterBar').height(),
 		scrollTime = 400;
 
 		//initial
 		$scrollSection.hide();
+		$loginPage.css({"margin-top":filterHeight+navHeight});
 
 		$signInBtn.click(function(e){
 			e.preventDefault();

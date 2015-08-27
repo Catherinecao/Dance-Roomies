@@ -20,11 +20,13 @@ $background-gray:transparentize($gray,0.95);
 
 $dropshadow-nav:1px 8px 10px transparentize(black,0.8);
 $dropshadow-text:1px 2px 5px transparentize(black,0.8);
+$dropshadow-filter:$dropshadow-text;
 
 $border-hr:1px solid $gray;
 $border:$border-hr;
 $border-text:8px solid $gray;
 
 $background-color-lable:$white;
+$background-color-filter:$white;
 $circle-text-color:$white;
 $hr-border:2px solid transparentize($gray,0.85);

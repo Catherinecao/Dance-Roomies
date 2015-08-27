@@ -1,6 +1,14 @@
 .filterBar{
 	position:fixed;
-	top:70px;
+	top:50px;
 	width:100%;
+	overflow-y:hidden;
+	padding-top:10px;
+	z-index:100;
+	background-color:$background-color-filter;
+	box-shadow:$dropshadow-filter;
+}
 
+.time, .type, .location{
+	padding:5px 0;
 }
