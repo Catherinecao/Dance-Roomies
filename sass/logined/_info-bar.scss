@@ -1,0 +1,37 @@
+
+
+.infoBar{
+	background-color:$background-color-filter;
+	border-radius:3px;
+	box-shadow:$dropshadow-filter;
+	padding:3px;
+	overflow-y:hidden;
+	display:none;
+
+	@media (min-width:$tablet-min-width){
+		display: block;
+	}
+}
+
+.bottom-menu{
+	border-top:$border;
+	height:50px;
+	position:fixed;
+	z-index:101;
+	overflow-y:hidden;
+	width:100%;
+	background-color:$background-color-filter;
+
+	@media (min-width:$tablet-min-width){
+		display: none;
+	}
+
+	.info-item{
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:10px;
+		.icon{
+			color:$info-color;
+		}
+	}
+}

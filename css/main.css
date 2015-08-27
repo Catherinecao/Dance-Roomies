@@ -2,13 +2,12 @@ body {
   background-color: rgba(128, 128, 128, 0.05);
   box-sizing: border-box;
   margin: 0;
-  padding-top: 70px; }
-
-main {
-  margin-top: -20px; }
+  padding-top: 50px; }
 
 a {
   text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
 
 hr {
   border: 2px solid rgba(128, 128, 128, 0.15); }
@@ -121,17 +120,85 @@ img {
   width: 100%;
   display: inline-block; }
 
-.filterBar {
+.sidebar {
   position: fixed;
   top: 50px;
   width: 100%;
   overflow-y: hidden;
   padding-top: 10px;
-  z-index: 100;
-  background-color: white;
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2); }
+  z-index: 100; }
+  @media (min-width: 768px) {
+    .sidebar {
+      width: 25%;
+      display: inline-block; } }
 
-.time, .type, .location {
-  padding: 5px 0; }
+.select-style {
+  width: 100%;
+  line-height: 1em;
+  border: 0; }
+
+.sidebar-control {
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  color: rgba(128, 128, 128, 0.5); }
+
+.sidebar-control-active {
+  color: white;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); }
+
+.filterBar {
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 3px;
+  margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    .filterBar {
+      margin-bottom: 30px; } }
+
+.filter-item {
+  padding: 5px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.25); }
+  .filter-item:last-child {
+    border-bottom: 0; }
+
+.login {
+  margin-top: 30px; }
+  @media (min-width: 768px) {
+    .login {
+      margin-top: 0; } }
+  @media (min-width: 1200px) {
+    .login {
+      padding-left: 2%; } }
+
+.infoBar {
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 3px;
+  overflow-y: hidden;
+  display: none; }
+  @media (min-width: 768px) {
+    .infoBar {
+      display: block; } }
+
+.bottom-menu {
+  border-top: 1px solid gray;
+  height: 50px;
+  position: fixed;
+  z-index: 101;
+  overflow-y: hidden;
+  width: 100%;
+  background-color: white; }
+  @media (min-width: 768px) {
+    .bottom-menu {
+      display: none; } }
+  .bottom-menu .info-item {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .bottom-menu .info-item .icon {
+      color: gray; }
 
 /*# sourceMappingURL=main.css.map */

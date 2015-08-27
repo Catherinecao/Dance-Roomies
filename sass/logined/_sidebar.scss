@@ -1,0 +1,34 @@
+.sidebar{
+	position:fixed;
+	top:50px;
+	width:100%;
+	// padding-right:30px;
+
+	@media (min-width:$tablet-min-width){
+		width: 25%;
+		display: inline-block;
+	}
+
+	overflow-y:hidden;
+	padding-top:10px;
+	z-index:100;
+
+}
+
+.select-style{
+	width:100%;	
+	line-height:1em;
+	border:0;
+}
+
+.sidebar-control{
+	text-align:center;
+	display:block;
+	cursor: pointer;
+	color:$transparent-gray;
+}
+.sidebar-control-active{
+	color:$white;
+	box-shadow:$dropshadow;
+
+}

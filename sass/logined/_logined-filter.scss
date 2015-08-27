@@ -1,14 +1,21 @@
+
 .filterBar{
-	position:fixed;
-	top:50px;
-	width:100%;
-	overflow-y:hidden;
-	padding-top:10px;
-	z-index:100;
+	border-radius:3px;
 	background-color:$background-color-filter;
 	box-shadow:$dropshadow-filter;
+	padding:3px;
+	margin-bottom:10px;
+	@media (min-width:$tablet-min-width){
+		margin-bottom:30px;
+	}
 }
 
-.time, .type, .location{
-	padding:5px 0;
+.filter-item{
+	padding:5px;
+	border-bottom:$border-filter-item;
+	&:last-child{
+		border-bottom:0;
+	}
 }
+
+

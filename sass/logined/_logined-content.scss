@@ -1,0 +1,9 @@
+.login{
+	margin-top:30px;
+	@media (min-width:$tablet-min-width){
+		margin-top: 0;
+	}
+	@media (min-width:$large-min-width){
+		padding-left:percentage(2/100);
+	}
+}
