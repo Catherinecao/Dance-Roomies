@@ -28,7 +28,7 @@ $dropshadow-text:1px 2px 5px transparentize(black,0.8);
 $dropshadow-filter:$dropshadow-text;
 
 $border-hr:1px solid $gray;
-$border:$border-hr;
+$border:1px solid $transparent-gray;
 $border-text:8px solid $gray;
 $border-filter-item:1px solid transparentize($gray,0.75);
 

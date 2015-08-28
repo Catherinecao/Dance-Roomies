@@ -16,7 +16,7 @@ hr {
   text-align: center;
   margin-top: 3em;
   margin-bottom: 3em;
-  border: 1px solid gray;
+  border: 1px solid rgba(128, 128, 128, 0.5);
   padding: 0.5em 2em;
   background-color: white;
   white-space: normal;
@@ -145,7 +145,8 @@ img {
 
 .sidebar-control-active {
   color: white;
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); }
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: color 0.5s, box-shadow 0.5s; }
 
 .filterBar {
   border-radius: 3px;
@@ -184,7 +185,7 @@ img {
       display: block; } }
 
 .bottom-menu {
-  border-top: 1px solid gray;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
   height: 50px;
   position: fixed;
   z-index: 101;
@@ -197,7 +198,10 @@ img {
   .bottom-menu .info-item {
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    border-right: 1px solid rgba(128, 128, 128, 0.5); }
+    .bottom-menu .info-item:last-child {
+      border-right: 0; }
     .bottom-menu .info-item .icon {
       color: gray; }
 
