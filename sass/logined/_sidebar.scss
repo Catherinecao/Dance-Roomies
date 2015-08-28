@@ -22,14 +22,12 @@
 }
 
 .sidebar-control{
+	// display:none;
 	text-align:center;
-	display:block;
 	cursor: pointer;
-	color:$transparent-gray;
+	color:$theme-color;
+	padding-top:10px;
 }
-.sidebar-control-active{
-	color:$white;
-	box-shadow:$dropshadow;
-	transition:color 0.5s, box-shadow 0.5s;
 
-}
+
+

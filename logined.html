@@ -38,6 +38,7 @@
         <li class="active"><a href="#">Explore <span class="sr-only">(current)</span></a></li>
         <li><a href="#">User's Name</a></li>
         <li><a href="#">Sign Out</a></li>
+
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -47,9 +48,9 @@
 
 	<div class="col-sm-9 clearfix login">
 		<!-- <div class="container"> -->
-			<div class="col-sm-6">
+			<div class="col-sm-6 card">
 				<div class="col-sm-12 img">
-					<img src="img/Two_dancers.jpg" alt="">
+					<img src="img/Two_dancers-1.png" alt="">
 				</div>
 				<div class="col-sm-12 blur">
 					<h3>Auckland Salsa Ball</h3>
@@ -59,9 +60,9 @@
 				</div>
 			</div>
 
-			<div class="col-sm-6">
+			<div class="col-sm-6 card">
 				<div class="col-sm-12 img">
-					<img src="img/Two_dancers.jpg" alt="">
+					<img src="img/Two_dancers-1.png" alt="">
 				</div>
 				<div class="col-sm-12 blur">
 					<h3>Auckland Salsa Ball</h3>
@@ -71,9 +72,9 @@
 				</div>
 			</div>
 
-			<div class="col-sm-6">
+			<div class="col-sm-6 card">
 				<div class="col-sm-12 img">
-					<img src="img/Two_dancers.jpg" alt="">
+					<img src="img/Two_dancers-1.png" alt="">
 				</div>
 				<div class="col-sm-12 blur">
 					<h3>Auckland Salsa Ball</h3>
@@ -87,21 +88,20 @@
 	</div>
 
 	<div class="sidebar col-sm-3 clearfix">
-		<div class="filterBar clearfix">
+		<div class="filterBar mobile clearfix">
 			<div class="col-sm-12  filter-item clearfix">
-
 		        <select class="select-style">
-		        	<option selected="selected" value="">Time</option>
-		            <option value="0">2015</option>
-		            <option value="1">2016</option>
-		            <option value="2">2017</option>
+		        	<option selected="selected" value="">2015</option>
+		            <option value="0">2016</option>
+		            <option value="1">2017</option>
+		            <option value="2">2018</option>
 		        </select>
 			</div>
 			<div class="col-sm-12 filter-item clearfix">
 		        <select class="select-style">
-		        	<option selected="selected" value="">Type</option>
-		            <option value="0">Salsa</option>
-		            <option value="1">Bachata</option>
+		        	<option selected="selected" value="">Salsa</option>
+		            <option value="0">Bachata</option>
+		            <option value="1">Cha Cha</option>
 		            <option value="2">Zouk</option>
 		        </select>
 			</div>
@@ -120,7 +120,45 @@
 		        </select>
 			</div>
 		</div><!-- /.filterbar -->
-		
+
+		<div class="col-sm-12 sidebar-control filter-label clearfix">			
+			Filter By
+			<i class="fa fa-plus fa-lg"></i>
+		</div>
+		<!-- /.sidebar-control -->
+		<div class="filterBar tablet clearfix">
+			<div class="col-sm-12  filter-item clearfix">
+		        <select class="select-style">
+		        	<option selected="selected" value="">2015</option>
+		            <option value="0">2016</option>
+		            <option value="1">2017</option>
+		            <option value="2">2018</option>
+		        </select>
+			</div>
+			<div class="col-sm-12 filter-item clearfix">
+		        <select class="select-style">
+		        	<option selected="selected" value="">Salsa</option>
+		            <option value="0">Bachata</option>
+		            <option value="1">Cha Cha</option>
+		            <option value="2">Zouk</option>
+		        </select>
+			</div>
+			<div class="col-sm-12 filter-item clearfix">
+		        <select class="select-style">
+		        	<option selected="selected" value="">Auckland</option>
+		            <option value="0">Wellinton</option>
+		            <option value="1">Chrischurch</option>
+		            <option value="2">Oversea</option>
+		        </select>
+			</div>
+			<div class="col-sm-12 filter-item clearfix">
+		        <select class="select-style">
+		        	<option selected="selected" value="">Events</option>
+		            <option value="0">Wanted</option>
+		        </select>
+			</div>
+		</div><!-- /.filterbar -->
+
 		<div class="infoBar clearfix">
 			<div class="col-xs-12 filter-item">
 				<a href="#">
@@ -140,10 +178,7 @@
 			</div>
 		</div>
 
-		<div class="col-sm-12 sidebar-control clearfix">
-		    <i class="fa fa-caret-down fa-2x"></i>
-		</div>
-		<!-- /.sidebar-control -->
+
 
 	</div>
 	<!-- /.sidebar -->
@@ -162,7 +197,7 @@
 			</div>
 			<div class="col-xs-3 info-item">
 				<a href="#">
-					<i class="fa fa-envelope fa-lg icon"></i>
+					<i class="fa fa-envelope fa icon"></i>
 					<span class="badge">2</span>
 				</a>
 			</div>

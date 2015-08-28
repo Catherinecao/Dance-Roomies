@@ -1,6 +1,7 @@
 
 
 .infoBar{
+	margin-top:10px;
 	background-color:$background-color-filter;
 	border-radius:3px;
 	box-shadow:$dropshadow-filter;
@@ -21,6 +22,7 @@
 	overflow-y:hidden;
 	width:100%;
 	background-color:$background-color-filter;
+	box-shadow:$dropshadow-menu;
 
 	@media (min-width:$tablet-min-width){
 		display: none;
