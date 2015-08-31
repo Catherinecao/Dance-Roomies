@@ -7,6 +7,10 @@
 	box-shadow:$dropshadow-card;
 	background-color:$white;
 
+	@media (min-width:$tablet-min-width){
+		padding:10px 0;
+	}
+
 	@media (min-width:$large-min-width){
 		margin-right:0;
 		// padding-left:percentage(2/100);
@@ -15,8 +19,11 @@
 
 .card{
 	border-bottom:$border-bottom;
-	@media (min-width:$large-min-width){
+	@media (min-width:$tablet-min-width){
 		border-right:$border-bottom;
+		&:nth-child(2n+0){
+			border-right:0;
+		}
 	}
 	
 }

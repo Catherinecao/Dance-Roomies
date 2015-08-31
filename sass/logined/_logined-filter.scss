@@ -13,6 +13,9 @@
 	}
 }
 
+.tablet{
+	display:none;
+}
 
 .filter-item{
 	padding:5px;
@@ -36,7 +39,7 @@
 	@media (min-width:$tablet-min-width){
 		text-align:left;
 		padding-left:10px;
-		margin-bottom:10px;
+		// margin-bottom:10px;
 		margin-top:0;
 	}
 

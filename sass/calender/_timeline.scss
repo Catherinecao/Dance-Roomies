@@ -1,0 +1,68 @@
+.calender{
+	@media (min-width:$tablet-min-width){
+		margin-left:50px;
+	}
+	
+
+	.date{
+		background-color: transparentize($light-theme,0.4);
+		color:$white;
+
+		width:100px;
+		height:100px;
+		border-radius: 50%;
+		@media (min-width:$tablet-min-width){
+			width:100px;
+			height:100px;
+		}
+
+		text-align: center;
+		font-style: bold;
+
+		box-shadow:$dropshadow-inset;
+
+		p{
+			margin-bottom: 0;
+		}
+		.month{
+			font-size: 1.6em;
+			margin-bottom:5px;
+			text-shadow: $dropshadow-point;
+		}
+
+		.day{
+			border-bottom:2px solid $white;
+			margin-top: 10px;
+			font-size: 2.2em;
+			text-shadow: $dropshadow-point;
+		}
+	}
+
+	.blur{
+		display: inline-blockl;
+		
+		@media (min-width:$tablet-min-width){
+			margin-left: 20px;
+		}
+
+		hr{
+			border:1px solid $light-gray;
+			padding-right:20px;
+			padding-left:80%;
+		}
+
+		.time, .accommondation, .details{
+			i,p{
+				display: inline;
+			}
+			i{
+				padding-right:10px;
+			}
+			padding-right: 30px;
+			display: block;
+			float: left;
+		}
+
+
+	}
+}

@@ -10,6 +10,7 @@ $(document).ready(function(){
 		$filterTablet = $('.tablet'),
 		$sideBar = $('.sidebar'),
 		$filterBarHeight = $filterBar.height();
+		$filterTabletHeight = $filterTablet.height();
 		$filterBarControl = $('.sidebar-control'),
 		$windowWidth = $(window).innerWidth(),
 		filterShow = false,
@@ -23,14 +24,13 @@ $(document).ready(function(){
 		$mobileMenu.css({"top":screenHeight}).transition({y:-mobileMenuHeight, delay:filterdelayTime+scrollTime, easing: "easeInOutQuart"});
 
 		//filterSlide
-		if ($windowWidth <= 768 ){
-
+		if ($windowWidth < 768 ){
+			//mobile
 			$sideBar.transition({ y: -$filterBarHeight-30 , delay:filterdelayTime, easing: "easeInOutQuart"});
 
 		}else{
-
-			$filterTablet.hide();
-			$sideBar.show;
+			//tablet & desktop
+			
 		}
 		
 
@@ -83,12 +83,13 @@ $(document).ready(function(){
 
 		function filterSlide(){
 			if (filterShow === false ){
+				
 				$filterTablet.velocity("slideDown",{duration: scrollTime, easing:"easeInOutQuart"});
 
 				filterShow = true;
 				
 			} else {
-		
+				// $filterTablet.transition({y:-$filterTabletHeight, duration: scrollTime});
 				$filterTablet.velocity("slideUp",{duration: scrollTime, easing:"easeInOutQuart"});
 			 	filterShow = false;
 			}		

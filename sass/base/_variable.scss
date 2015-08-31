@@ -16,6 +16,15 @@ $transparent-gray:transparentize($gray,0.5);
 $dark-gray:darken($gray, 10%);
 $theme-color:#8B1D3F;
 $darker-theme:#590C1D;
+$light-theme:#D72D62;
+// #9e15b5;
+
+$orange:#FF9800;
+$light-orange:#FFE7C3;
+$light-orange-1:#E8A50C;
+$dark-orange:#F57C00;
+$darker-orange:#724400;
+
 
 $background-color-start:$dark-gray;
 $background-gray:transparentize($gray,0.95);
@@ -26,8 +35,10 @@ $dropshadow:1px 2px 5px transparentize(black,0.7);
 $dropshadow-nav:1px 8px 10px transparentize(black,0.8);
 $dropshadow-menu:1px -2px 5px transparentize(black,0.85);
 $dropshadow-text:1px 2px 5px transparentize(black,0.8);
+$dropshadow-point:1px 1px 3px transparentize(black,0.8);
 $dropshadow-card:1px 2px 5px transparentize(black,0.9);
 $dropshadow-filter:$dropshadow-text;
+$dropshadow-inset:1px 1px 3px transparentize(black,0.8) inset;
 
 $border-hr:1px solid $gray;
 $border:1px solid transparentize($gray,0.75);
