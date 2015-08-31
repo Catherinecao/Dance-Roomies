@@ -1,68 +1,110 @@
-.calender{
+
+.calender-events{
+	margin-bottom:10px;
+	// border-radius:3px;
+ //  	box-shadow:$dropshadow-card;
+ //  	background-color:$white;
+
+	padding:0;
+	display:inline;
+
 	@media (min-width:$tablet-min-width){
-		margin-left:50px;
-	}
 	
+	}
 
 	.date{
-		background-color: transparentize($light-theme,0.4);
-		color:$white;
+		display: block;
+		padding:0;
+	}
 
-		width:100px;
-		height:100px;
+
+	.circle{
+
+		margin-top: 20px;
+		
+		box-sizing:border-box;
+		color:$white;
+		background-color: transparentize($light-theme,0.4);
+		box-shadow:$dropshadow-inset;
+		text-align: center;
+
+		width:52px;
+		height:52px;
 		border-radius: 50%;
 		@media (min-width:$tablet-min-width){
 			width:100px;
 			height:100px;
+			margin-top: 0px;
+			float: right;
 		}
-
-		text-align: center;
-		font-style: bold;
-
-		box-shadow:$dropshadow-inset;
 
 		p{
 			margin-bottom: 0;
+			font-style: bold;
 		}
 		.month{
-			font-size: 1.6em;
-			margin-bottom:5px;
+			font-size: 1em;
+			text-shadow: $dropshadow-point;
+			display: inline;
+
+			@media (min-width:$tablet-min-width){
+				font-size: 1.6em;
+				margin-bottom:5px;
+			}
+		}
+
+		hr{
+			border:1.5px solid $white;
+			margin-top: 0;
+			margin-bottom:0;
+			width: 60%;
 			text-shadow: $dropshadow-point;
 		}
 
 		.day{
-			border-bottom:2px solid $white;
-			margin-top: 10px;
-			font-size: 2.2em;
+
+			font-size: 1.5em;
 			text-shadow: $dropshadow-point;
+			display: inline;
+
+			@media (min-width:$tablet-min-width){
+				font-size: 2.6em;
+			}
+			
 		}
 	}
 
-	.blur{
-		display: inline-blockl;
+	.calender{
+		float: right;
+		display: inline;
+
+
+		display: inline-block;
+		border-radius:3px;
+  		box-shadow:$dropshadow-card;
+ 		background-color:$white;
+ 		padding-bottom:10px;
+
 		
 		@media (min-width:$tablet-min-width){
 			margin-left: 20px;
 		}
 
-		hr{
-			border:1px solid $light-gray;
-			padding-right:20px;
-			padding-left:80%;
+		.title{
+		padding-bottom:7px;
+		border-bottom:2px solid transparentize($light-theme,0.4);
 		}
-
-		.time, .accommondation, .details{
-			i,p{
-				display: inline;
-			}
-			i{
-				padding-right:10px;
-			}
-			padding-right: 30px;
-			display: block;
-			float: left;
-		}
-
-
+	
+		.accommondation, .details{
+		padding-left:0;
+				i,p{
+					display: inline;
+				}
+				i{
+					padding-right:10px;
+				}		
+		}	
 	}
+	
+
 }

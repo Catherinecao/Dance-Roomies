@@ -46,3 +46,19 @@ ul{
     text-decoration: none;
   }
 }
+
+.listen-area{
+  float: left;
+  margin-top:30px;
+  width: 100%;
+
+  @media (min-width:$tablet-min-width){
+    padding:10px 0;
+    
+  }
+
+  @media (min-width:$large-min-width){
+    margin-right:0;
+    // padding-left:percentage(2/100);
+  }
+}

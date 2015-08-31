@@ -15,13 +15,21 @@ $(document).ready(function(){
 		$windowWidth = $(window).innerWidth(),
 		filterShow = false,
 		filterTabletShow = false,
-		mobileMenuShow = false,
 		scrollTime = 400,
 		filterdelayTime = 1200;
 
 		//initial
 		$scrollSection.hide();
-		$mobileMenu.css({"top":screenHeight}).transition({y:-mobileMenuHeight, delay:filterdelayTime+scrollTime, easing: "easeInOutQuart"});
+		$mobileMenu.css({"top":screenHeight}).velocity({top:screenHeight-mobileMenuHeight},
+			{duration: scrollTime,
+				delay:filterdelayTime+scrollTime,
+				easing: "easeInOutQuart",
+				complete: function(){
+					//add mobile menu scroll animation
+					scrollhideMobileMenu();
+				}
+			}
+		);
 
 		//filterSlide
 		if ($windowWidth < 768 ){
@@ -33,7 +41,6 @@ $(document).ready(function(){
 			
 		}
 		
-
 
 		//functions
 
@@ -55,9 +62,9 @@ $(document).ready(function(){
 		});
 
 		//window srcollDown hide bottom menu, srcollUp show 
-		$(window).scroll(function(){
+		//$(window).scroll(function(){
 			scrollhideMobileMenu();
-		});
+		//});
 		
 
 		function scrollToIntro(){
@@ -97,21 +104,26 @@ $(document).ready(function(){
 		
 
 		function scrollhideMobileMenu(){
-			if(mobileMenuShow === false){
 
-				if($(window).scrollTop() >= 200){
-					$mobileMenu.transition({y:mobileMenuHeight});
-				}
-				mobileMenuShow = true;
-			}
-			else{
-
-				if($(window).scrollTop() < 200){
-					$mobileMenu.transition({y:-mobileMenuHeight});
-				}
-				mobileMenuShow = false;
-			}
+			var lastScrollTop = $(window).scrollTop(),
+				isShowing = true;
+			$(window).scroll(function(event){
+			   	var st = $(this).scrollTop();
+			   	if (st > lastScrollTop){
+			       // downscroll code
+			       	if(isShowing){
+				       $mobileMenu.velocity({top:screenHeight}, {duration: scrollTime, easing: "easeInOutQuart"});
+				       isShowing = false;
+			   	   	}
+			    } else if(st < lastScrollTop){
+			        // upscroll code
+			        if(!isShowing){
+			        	$mobileMenu.velocity({top:screenHeight-mobileMenuHeight}, {duration: scrollTime, easing: "easeInOutQuart"});
+			        	isShowing = true;
+			    	}
+			    }
+			    lastScrollTop = st;
+			});
 		}
 		
-
 });
