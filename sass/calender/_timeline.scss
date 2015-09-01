@@ -15,6 +15,11 @@
 	.date{
 		display: block;
 		padding:0;
+		
+		color:$white;
+		background-color: transparentize($light-theme,0.4);
+		box-shadow:$dropshadow-inset;
+		text-align: center;
 	}
 
 

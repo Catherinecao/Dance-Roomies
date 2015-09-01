@@ -13,8 +13,9 @@ $(document).ready(function(){
 		$filterTabletHeight = $filterTablet.height();
 		$filterBarControl = $('.sidebar-control'),
 		$windowWidth = $(window).innerWidth(),
+		$eventDetail = $('.detail-info'),
+		$detailBtn = $('.details'),
 		filterShow = false,
-		filterTabletShow = false,
 		scrollTime = 400,
 		filterdelayTime = 1200;
 
@@ -62,10 +63,22 @@ $(document).ready(function(){
 		});
 
 		//window srcollDown hide bottom menu, srcollUp show 
-		//$(window).scroll(function(){
 			scrollhideMobileMenu();
-		//});
+
+
+
+
+		//calender page
+		$detailBtn.click(function(e){
+			e.preventDefault();
+
+			eventDetailshow();
+		});
+
 		
+			
+
+			
 
 		function scrollToIntro(){
 			$scrollSection.show().velocity("scroll", { duration: scrollTime, easing: "easeInOutQuart" ,offset:-navHeight*2})
@@ -96,7 +109,7 @@ $(document).ready(function(){
 				filterShow = true;
 				
 			} else {
-				// $filterTablet.transition({y:-$filterTabletHeight, duration: scrollTime});
+
 				$filterTablet.velocity("slideUp",{duration: scrollTime, easing:"easeInOutQuart"});
 			 	filterShow = false;
 			}		
@@ -124,6 +137,23 @@ $(document).ready(function(){
 			    }
 			    lastScrollTop = st;
 			});
+		}
+
+		//event dateil slideDown
+		function eventDetailshow(){
+
+
+			if (filterShow === false ){
+				
+				$eventDetail.velocity("slideDown",{duration: scrollTime, easing:"easeInOutQuart"});
+
+				filterShow = true;
+				
+			} else {
+
+				$eventDetail.velocity("slideUp",{duration: scrollTime, easing:"easeInOutQuart"});
+			 	filterShow = false;
+			}
 		}
 		
 });
