@@ -207,13 +207,33 @@ img {
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
   background-color: white;
   border-bottom: 1px solid rgba(128, 128, 128, 0.15);
-  padding: 0; }
+  padding: 0;
+  cursor: pointer; }
   @media (min-width: 768px) {
     .card {
       width: 49.5%;
       margin-right: 5px; }
       .card:nth-child(2n+0) {
         margin-right: 0; } }
+  .card .blur {
+    display: inline-block; }
+    .card .blur .title {
+      display: inline;
+      color: #8B1D3F; }
+      .card .blur .title h3 {
+        display: inline-block;
+        width: 90%; }
+    .card .blur .border-bottom {
+      border: 1px solid rgba(128, 128, 128, 0.25);
+      margin-bottom: 10px; }
+    .card .blur .add-to-calender {
+      margin-top: 20px;
+      display: inline-block;
+      width: 10%;
+      float: right;
+      margin-right: -25px; }
+    .card .blur p {
+      color: gray; }
 
 .infoBar {
   margin-top: 10px;
@@ -258,9 +278,21 @@ img {
     display: inline-block;
     padding-top: 20px;
     color: #D72D62;
-    line-height: 1.1; }
+    line-height: 1.1;
+    padding-left: 14px; }
+    @media (min-width: 768px) {
+      .event .date {
+        padding-top: 18px;
+        padding-left: 28px;
+        line-height: 1; } }
     .event .date .day {
       font-size: 23px; }
+      @media (min-width: 768px) {
+        .event .date .day {
+          font-size: 30px; } }
+    @media (min-width: 768px) {
+      .event .date .month {
+        font-size: 18px; } }
   .event .event-content {
     border-left: 8px solid rgba(215, 45, 98, 0.3);
     padding-bottom: 20px; }
@@ -268,13 +300,17 @@ img {
       color: #590C1D; }
     .event .event-content hr {
       margin-bottom: 10px; }
+    .event .event-content a {
+      color: #8B1D3F; }
+      .event .event-content a i {
+        color: #8B1D3F; }
   .event i, .event p {
     display: inline;
     color: #676767; }
   .event i {
     padding-right: 10px; }
   .event .details {
-    width: 55%;
+    width: 120px;
     padding-top: 5px;
     padding-bottom: 7px;
     padding-left: 15px;
@@ -283,14 +319,22 @@ img {
     margin-left: 20px;
     cursor: pointer;
     color: white;
-    background-color: #FF9800;
+    background-color: #F57C00;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
     border-radius: 30px; }
+    @media (min-width: 768px) {
+      .event .details {
+        width: 200px;
+        padding-left: 50px; } }
     .event .details i, .event .details p {
-      color: white; }
+      color: white;
+      padding-right: 5px; }
     .event .details:hover {
+      background-color: #FF9800;
       box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
-      transition: box-shadow 0.1s, ease-in-out 0s; }
+      transition: box-shadow 0.1s, background-color 0.2s, ease-in-out; }
+      .event .details:hover p {
+        text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2); }
   .event .detail-info {
     display: none;
     margin-left: 10px; }

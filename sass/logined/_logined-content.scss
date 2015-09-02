@@ -1,5 +1,4 @@
 
-
 .card{
 	margin-bottom:10px;
 	border-radius:3px;
@@ -7,6 +6,7 @@
   	background-color:$white;
 	border-bottom:$border-bottom;
 	padding:0;
+	cursor:pointer;
 
 	@media (min-width:$tablet-min-width){
 
@@ -15,6 +15,37 @@
 		&:nth-child(2n+0){
 			margin-right:0;
 			}
+	}
+
+	.blur{
+		display: inline-block;
+
+		.title{
+			display: inline;
+			color:$theme-color;
+
+			h3{
+				display: inline-block;
+				width: 90%;
+			}
+		}
+
+		.border-bottom{
+			border:$border;
+			margin-bottom: 10px;
+		}
+		.add-to-calender{
+			margin-top: 20px;
+			display: inline-block;
+			width: 10%;
+			float: right;
+			margin-right: -25px;
+		}
+		
+		p{
+			color:$gray;
+		}
+		
 	}
 	
 }
