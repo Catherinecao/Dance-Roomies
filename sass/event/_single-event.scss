@@ -1,0 +1,35 @@
+.single-event{
+	margin-bottom:10px;
+	border-radius:3px;
+  	box-shadow:$dropshadow-card;
+  	background-color:$white;
+  	padding:0;
+
+  	.row{
+  		margin:0;
+  	}
+
+  	.img{
+  		color:transparentize(black,0.4);
+  		padding: 0;
+  		img{
+  			width: 100%;
+  			margin:0;
+  		}
+  	}
+
+  	.title{
+
+  		h3{
+  			float: left;
+  		}
+  		a{
+  			float: right;
+  			margin-top: 15px;
+  		}
+  	}
+  	.border-bottom{
+  		border:$border;
+  	}
+
+}

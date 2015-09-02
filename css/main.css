@@ -221,19 +221,30 @@ img {
       display: inline;
       color: #8B1D3F; }
       .card .blur .title h3 {
+        display: inline-block; }
+      .card .blur .title .add-to-calender {
+        margin-top: 15px;
         display: inline-block;
-        width: 90%; }
+        color: #8B1D3F;
+        float: right; }
     .card .blur .border-bottom {
       border: 1px solid rgba(128, 128, 128, 0.25);
       margin-bottom: 10px; }
-    .card .blur .add-to-calender {
-      margin-top: 20px;
-      display: inline-block;
-      width: 10%;
-      float: right;
-      margin-right: -25px; }
     .card .blur p {
       color: gray; }
+  .card:hover {
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.7);
+    transition-timing-function: ease-in-out;
+    -webkit-transition: box-shadow 0.1s, background-color 0.1s;
+    transition: box-shadow 0.1s, background-color 0.1s; }
+    .card:hover .title {
+      color: white;
+      text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1); }
+    .card:hover .border-bottom {
+      border-color: #D72D62; }
+    .card:hover p {
+      color: rgba(255, 255, 255, 0.7); }
 
 .infoBar {
   margin-top: 10px;
@@ -346,5 +357,27 @@ img {
       border-bottom: 1px solid rgba(128, 128, 128, 0.15); }
       .event .detail-info div:last-child {
         border-bottom: 0; }
+
+.single-event {
+  margin-bottom: 10px;
+  border-radius: 3px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 0; }
+  .single-event .row {
+    margin: 0; }
+  .single-event .img {
+    color: rgba(0, 0, 0, 0.6);
+    padding: 0; }
+    .single-event .img img {
+      width: 100%;
+      margin: 0; }
+  .single-event .title h3 {
+    float: left; }
+  .single-event .title a {
+    float: right;
+    margin-top: 15px; }
+  .single-event .border-bottom {
+    border: 1px solid rgba(128, 128, 128, 0.25); }
 
 /*# sourceMappingURL=main.css.map */

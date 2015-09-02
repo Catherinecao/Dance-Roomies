@@ -14,6 +14,7 @@ $white: white;
 $light-gray:transparentize($gray,0.95);
 $transparent-gray:transparentize($gray,0.5);
 $dark-gray:darken($gray, 10%);
+$darker-gray:transparentize(black,0.3);
 $theme-color:#8B1D3F;
 $darker-theme:#590C1D;
 $light-theme:#D72D62;
@@ -38,6 +39,7 @@ $dropshadow-menu:1px -2px 5px transparentize(black,0.85);
 $dropshadow-text:1px 2px 5px transparentize(black,0.8);
 $dropshadow-point:1px 1px 2px transparentize(black,0.75);
 $dropshadow-card:1px 2px 5px transparentize(black,0.9);
+$dropshadow-hover:1px 4px 8px transparentize(black,0.9);
 $dropshadow-filter:$dropshadow-text;
 $dropshadow-inset:1px 1px 3px transparentize(black,0.8) inset;
 

@@ -23,10 +23,17 @@
 		.title{
 			display: inline;
 			color:$theme-color;
+			// background-color:$light-pink;
 
 			h3{
 				display: inline-block;
-				width: 90%;
+			}
+
+			.add-to-calender{
+				margin-top: 15px;
+				display: inline-block;
+				color:$theme-color;
+				float: right;
 			}
 		}
 
@@ -34,18 +41,32 @@
 			border:$border;
 			margin-bottom: 10px;
 		}
-		.add-to-calender{
-			margin-top: 20px;
-			display: inline-block;
-			width: 10%;
-			float: right;
-			margin-right: -25px;
-		}
+
 		
 		p{
 			color:$gray;
 		}
 		
+	}
+
+	&:hover{
+		box-shadow:$dropshadow-hover;
+		background-color: $darker-gray;
+		.title{
+			color:$white;
+			text-shadow: $dropshadow-hover;
+
+		}
+		
+		.border-bottom{
+			border-color:$light-theme;
+		}
+		p{
+			color:transparentize($white, 0.3);
+		}
+		transition-timing-function: ease-in-out;
+		-webkit-transition: box-shadow 0.1s, background-color 0.1s;
+		transition:  box-shadow 0.1s, background-color 0.1s;
 	}
 	
 }
