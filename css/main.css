@@ -20,7 +20,7 @@ hr {
   padding: 0.5em 2em;
   background-color: white;
   white-space: normal;
-  border-radius: 3px; }
+  border-radius: 20px; }
   @media (min-width: 768px) {
     .btn {
       margin-top: 4em;
@@ -93,6 +93,29 @@ ul li {
 .col-sm-12 {
   padding: 25px auto; }
 
+.sign-in {
+  border-color: #D72D62;
+  border-width: 2px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  color: #D72D62; }
+  .sign-in:hover {
+    background-color: #D72D62;
+    color: white;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color  0.2s, text-shadow 0.2s, color 0.2s,  box-shadow 0.2s, easing-in-out; }
+
+.w-i-d-r {
+  background-color: #F57C00;
+  color: white;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); }
+  .w-i-d-r:hover {
+    background-color: #FF9800;
+    color: white;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color  0.2s,box-shadow 0.2s, easing-in-out; }
+
 img {
   width: 100%;
   margin: 10px 0; }
@@ -107,12 +130,13 @@ img {
       display: block; } }
 
 .half-circle {
-  background: #676767;
+  background: #FF9800;
   text-align: center;
   padding-top: 50px;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
+  color: white;
   height: 150px;
   width: 300px;
   border-radius: 300px 300px 0 0;
@@ -233,14 +257,14 @@ img {
     .card .blur p {
       color: gray; }
   .card:hover {
-    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
     background-color: rgba(0, 0, 0, 0.7);
     transition-timing-function: ease-in-out;
     -webkit-transition: box-shadow 0.1s, background-color 0.1s;
     transition: box-shadow 0.1s, background-color 0.1s; }
     .card:hover .title {
       color: white;
-      text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1); }
+      text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3); }
     .card:hover .border-bottom {
       border-color: #D72D62; }
     .card:hover p {
@@ -367,6 +391,11 @@ img {
   .single-event .row {
     margin: 0; }
   .single-event .img {
+    background-image: url(../img/Two_dancers-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
     color: rgba(0, 0, 0, 0.6);
     padding: 0; }
     .single-event .img img {

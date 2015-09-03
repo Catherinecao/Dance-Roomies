@@ -28,7 +28,7 @@ $dark-orange:#F57C00;
 $darker-orange:#724400;
 
 
-$background-color-start:$dark-gray;
+$background-color-start:$orange;
 $background-gray:transparentize($gray,0.95);
 
 $info-color:$gray;
@@ -39,7 +39,7 @@ $dropshadow-menu:1px -2px 5px transparentize(black,0.85);
 $dropshadow-text:1px 2px 5px transparentize(black,0.8);
 $dropshadow-point:1px 1px 2px transparentize(black,0.75);
 $dropshadow-card:1px 2px 5px transparentize(black,0.9);
-$dropshadow-hover:1px 4px 8px transparentize(black,0.9);
+$dropshadow-hover:1px 5px 10px transparentize(black,0.7);
 $dropshadow-filter:$dropshadow-text;
 $dropshadow-inset:1px 1px 3px transparentize(black,0.8) inset;
 

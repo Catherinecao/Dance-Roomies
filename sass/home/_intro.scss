@@ -16,6 +16,33 @@
 	padding:25px auto;	
 }
 
+.sign-in{
+	border-color:$light-theme;
+	border-width:2px;
+	box-shadow:$dropshadow;
+	color:$light-theme;
+	&:hover{
+		background-color:$light-theme;
+		color:$white;
+		text-shadow: $dropshadow-text;
+		box-shadow:$dropshadow-hover;
+		transition: background-color  0.2s, text-shadow 0.2s, color 0.2s,  box-shadow 0.2s, easing-in-out;
+	}
+}
+
+.w-i-d-r{
+	background-color:$dark-orange;
+	color:$white;
+	text-shadow: $dropshadow-text;
+	box-shadow:$dropshadow;
+	&:hover{
+		background-color:$orange;
+		color:$white;
+		box-shadow:$dropshadow-hover;
+		transition: background-color  0.2s,box-shadow 0.2s, easing-in-out;
+	}
+}
+
 img{
 	width:100%;
 	margin: 10px 0;
@@ -39,6 +66,7 @@ img{
 	display:inline-block;
 	margin-left:auto;
 	margin-right:auto;
+	color:$white;
 
 	@include half-circle(0);
 
