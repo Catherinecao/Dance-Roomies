@@ -1,0 +1,21 @@
+.what-is-dance-roomies{
+
+	.step{
+		padding: 20px;
+	}
+	.img-circle{
+		box-shadow:$dropshadow;
+	}
+	h3{
+		font-size: 2em;
+		color:$theme-color;
+	}
+
+	p{
+		font-size: 1.1em;
+		color:$gray;
+	}
+	hr{
+		margin-top: 10px;
+	}
+}

@@ -12,6 +12,25 @@
 	box-shadow:1px 1px 4px transparentize(black,0.8) inset;	
 }
 
+.search-icon{
+	display:block;
+	padding-top:15px;
+	float:right;
+	margin-right:15px;
+}
+
+.hover, .active{
+	color:$light-theme;
+	transition: background-color 0.2s, easing-in-out;
+}
+
+.user-icon{
+	display:block;
+	padding-top:15px;
+	float:right;
+	margin-right:10px;
+}
+
 .form-control{
 	width:95%;
 	border:0;
@@ -38,5 +57,32 @@
 .navbar-form{
 	margin-top:10px;
 }
+
+.navbar-default{
+	.navbar-toggle{
+		border:0;
+		margin-bottom: 0;
+		&:hover{
+			background-color:$light-theme;
+			transition: background-color 0.2s, easing-in-out;
+			.icon-bar{
+				background-color:$white;
+				transition: background-color 0.2s, easing-in-out;
+			}
+		}
+
+			.icon-bar{
+				background-color:$light-theme;
+				height:3px;
+			}
+	}
+}
+.navbar-right{
+	a:hover{
+		color:$light-theme;
+	}
+}
+
+
 
 

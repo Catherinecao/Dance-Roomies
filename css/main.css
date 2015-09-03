@@ -58,6 +58,22 @@ ul li {
   padding: 5px 5px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2) inset; }
 
+.search-icon {
+  display: block;
+  padding-top: 15px;
+  float: right;
+  margin-right: 15px; }
+
+.hover, .active {
+  color: #D72D62;
+  transition: background-color 0.2s, easing-in-out; }
+
+.user-icon {
+  display: block;
+  padding-top: 15px;
+  float: right;
+  margin-right: 10px; }
+
 .form-control {
   width: 95%;
   border: 0;
@@ -79,6 +95,22 @@ ul li {
 
 .navbar-form {
   margin-top: 10px; }
+
+.navbar-default .navbar-toggle {
+  border: 0;
+  margin-bottom: 0; }
+  .navbar-default .navbar-toggle:hover {
+    background-color: #D72D62;
+    transition: background-color 0.2s, easing-in-out; }
+    .navbar-default .navbar-toggle:hover .icon-bar {
+      background-color: white;
+      transition: background-color 0.2s, easing-in-out; }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #D72D62;
+    height: 3px; }
+
+.navbar-right a:hover {
+  color: #D72D62; }
 
 .content {
   padding-top: 30px;
@@ -110,7 +142,7 @@ ul li {
   color: white;
   text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); }
-  .w-i-d-r:hover {
+  .w-i-d-r:hover, .w-i-d-r:active {
     background-color: #FF9800;
     color: white;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
@@ -129,31 +161,26 @@ img {
     .d-show {
       display: block; } }
 
-.half-circle {
-  background: #FF9800;
-  text-align: center;
-  padding-top: 50px;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  height: 150px;
-  width: 300px;
-  border-radius: 300px 300px 0 0;
-  -moz-border-radius: 300px 300px 0 0;
-  -webkit-border-radius: 300px 300px 0 0;
-  display: block;
-  color: white;
-  font-size: 2em; }
-
-.reverse {
-  background-color: gray; }
-  .reverse .col-sm-4 {
-    float: right; }
+.reverse .col-sm-4 {
+  float: right; }
 
 .what-is-dance-roomies {
+  padding-top: 20px;
   width: 100%;
   display: inline-block; }
+
+.what-is-dance-roomies .step {
+  padding: 20px; }
+.what-is-dance-roomies .img-circle {
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); }
+.what-is-dance-roomies h3 {
+  font-size: 2em;
+  color: #8B1D3F; }
+.what-is-dance-roomies p {
+  font-size: 1.1em;
+  color: gray; }
+.what-is-dance-roomies hr {
+  margin-top: 10px; }
 
 .sidebar {
   position: fixed;
@@ -388,8 +415,6 @@ img {
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
   background-color: white;
   padding: 0; }
-  .single-event .row {
-    margin: 0; }
   .single-event .img {
     background-image: url(../img/Two_dancers-2.png);
     background-repeat: no-repeat;
@@ -402,11 +427,18 @@ img {
       width: 100%;
       margin: 0; }
   .single-event .title h3 {
-    float: left; }
+    float: left;
+    color: #8B1D3F; }
   .single-event .title a {
     float: right;
     margin-top: 15px; }
   .single-event .border-bottom {
     border: 1px solid rgba(128, 128, 128, 0.25); }
+  .single-event p {
+    color: gray; }
+
+.user {
+  padding: 2px;
+  background-color: gray; }
 
 /*# sourceMappingURL=main.css.map */

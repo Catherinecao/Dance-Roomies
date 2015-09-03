@@ -69,10 +69,11 @@ $(document).ready(function(){
 
 
 		//calender page
+		//event dateil slideDown
+		
 		$detailBtn.click(function(e){
 			e.preventDefault();
-
-			eventDetailshow();
+			$(this).next().slideToggle();
 		});
 
 		
@@ -81,7 +82,7 @@ $(document).ready(function(){
 			
 
 		function scrollToIntro(){
-			$scrollSection.show().velocity("scroll", { duration: scrollTime, easing: "easeInOutQuart" ,offset:-navHeight*2})
+			$scrollSection.show().velocity("scroll", { duration: scrollTime, easing: "easeInOutQuart" ,offset:-navHeight})
 		};
 
 		//mobile
@@ -139,21 +140,7 @@ $(document).ready(function(){
 			});
 		}
 
-		//event dateil slideDown
-		function eventDetailshow(){
+		
 
-
-			if (filterShow === false ){
-				
-				$eventDetail.velocity("slideDown",{duration: scrollTime, easing:"easeInOutQuart"});
-
-				filterShow = true;
-				
-			} else {
-
-				$eventDetail.velocity("slideUp",{duration: scrollTime, easing:"easeInOutQuart"});
-			 	filterShow = false;
-			}
-		}
 		
 });

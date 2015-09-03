@@ -12,7 +12,6 @@
 
 
 .col-sm-12{
-
 	padding:25px auto;	
 }
 
@@ -35,7 +34,7 @@
 	color:$white;
 	text-shadow: $dropshadow-text;
 	box-shadow:$dropshadow;
-	&:hover{
+	&:hover,&:active{
 		background-color:$orange;
 		color:$white;
 		box-shadow:$dropshadow-hover;
@@ -59,30 +58,21 @@ img{
 	}
 }
 
-.half-circle{
-	background:$background-color-start;
-	text-align:center;
-	padding-top:50px;
-	display:inline-block;
-	margin-left:auto;
-	margin-right:auto;
-	color:$white;
-
-	@include half-circle(0);
-
-	display: block;
-	color:$circle-text-color;
-	font-size: 2em;	
+.start{
+	
 }
 
 .reverse{
-	background-color:$gray;
+	// background-color:$gray;
 
 	.col-sm-4{
 		float:right;
 	}
 }
 .what-is-dance-roomies{
+	padding-top:20px;
 	width:100%;
 	display:inline-block;
 }
+
+

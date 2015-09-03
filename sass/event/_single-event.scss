@@ -5,10 +5,6 @@
   background-color:$white;
   padding:0;
 
-  	.row{
-  		margin:0;
-  	}
-
   	.img{
       background-image: url(../img/Two_dancers-2.png);
       background-repeat: no-repeat;
@@ -27,6 +23,7 @@
 
   		h3{
   			float: left;
+        color:$theme-color;
   		}
   		a{
   			float: right;
@@ -36,5 +33,12 @@
   	.border-bottom{
   		border:$border;
   	}
+  p{
+    color:$gray;
+  }
+}
 
+.user{
+padding:2px;
+  background-color:$gray;
 }
