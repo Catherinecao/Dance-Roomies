@@ -112,6 +112,10 @@ ul li {
 .navbar-right a:hover {
   color: #D72D62; }
 
+body {
+  background-image: url(../img/004-subtle-light-pattern-background-texture.jpg);
+  background-repeat: repeat; }
+
 .content {
   padding-top: 30px;
   padding-bottom: 30px;
