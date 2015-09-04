@@ -1,15 +1,50 @@
-body{
-	background-image:url(../img/004-subtle-light-pattern-background-texture.jpg);
-	background-repeat:repeat;
-
-}
+// body{
+// 	background-image:url(../img/004-subtle-light-pattern-background-texture.jpg);
+// 	background-repeat:repeat;
+// }
 
 .content{
-	padding-top:30px;
-	padding-bottom:30px;
-	background-color:$theme-color;
-	color:$white;
-	text-shadow:$dropshadow-text;
+	background-image:url(../img/contra-dance.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+
+
+	.text{
+		padding:20px;
+		margin:30px;
+		@media (min-width:$tablet-min-width){
+			padding:40px;
+			margin:80px 100px;
+		}
+	
+		background-color:transparentize($theme-color,0.1);
+		color:$white;
+		text-shadow:$dropshadow-text;
+		border:1px solid transparentize($white,0.3);
+
+		.title{
+			font-family: 'Italiana', serif;
+			// font-size: 36px;
+			// line-height: 1;
+			margin-bottom:20px;
+			@media (min-width:$tablet-min-width){
+				margin-bottom: 20px;
+				margin-top: 15px;
+
+			}
+		}
+
+		.d{
+			font-family: 'Raleway', sans-serif;
+			font-size:20px;
+
+			@media (min-width:$tablet-min-width){
+				font-size:24px;
+				line-height:1.5;
+			}	
+		}
+	}
+
 }
 
 .col-md-12{
@@ -40,12 +75,30 @@ body{
 	color:$white;
 	text-shadow: $dropshadow-text;
 	box-shadow:$dropshadow;
+	margin-bottom:3em;
 	&:hover,&:active{
 		background-color:$orange;
 		color:$white;
 		box-shadow:$dropshadow-hover;
 		transition: background-color  0.2s,box-shadow 0.2s, easing-in-out;
 	}
+}
+.start{
+	font-size: 18px;
+	border-radius:22px;
+	margin-bottom:50px;
+	background-color:$light-theme;
+	box-shadow:$dropshadow;
+	color:$white;
+	&:hover{
+		background-color:$lighten-theme;
+		color:$white;
+		text-shadow: $dropshadow-text;
+		box-shadow:$dropshadow-hover;
+		transition: background-color  0.2s, text-shadow 0.2s, color 0.2s,  box-shadow 0.2s, easing-in-out;
+	}
+
+
 }
 
 img{
@@ -64,9 +117,6 @@ img{
 	}
 }
 
-.start{
-	
-}
 
 .reverse{
 	// background-color:$gray;

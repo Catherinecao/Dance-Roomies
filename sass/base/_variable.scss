@@ -11,7 +11,7 @@ $default-0:0 !default;
 
 $gray: gray;
 $white: white;
-$light-gray:transparentize($gray,0.95);
+$light-gray:transparentize($gray,0.9);
 $transparent-gray:transparentize($gray,0.5);
 $dark-gray:darken($gray, 10%);
 $darker-gray:transparentize(black,0.3);
@@ -19,7 +19,10 @@ $theme-color:#8B1D3F;
 $darker-theme:#590C1D;
 $light-theme:#D72D62;
 $light-pink:transparentize($light-theme,0.7);
+$lighten-theme:#FF4F86;
 // #9e15b5;
+$facebook-color:#3b5998;
+$light-fb-color:#8b9dc3;
 
 $orange:#FF9800;
 $light-orange:#FFE7C3;
