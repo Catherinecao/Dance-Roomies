@@ -1,0 +1,19 @@
+.pushed-users{
+	width:100%;
+}
+.user{
+
+  background-color:$white;
+  border-bottom:$border;
+  display: inline-block;
+
+  .other-user-icon{
+  	padding: 5px;
+  	img{
+  		margin: 0;
+  	}
+  }
+  .text{
+  	padding:5px;
+  }
+}

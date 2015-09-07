@@ -530,8 +530,18 @@ img {
   .single-event p {
     color: gray; }
 
+.pushed-users {
+  width: 100%; }
+
 .user {
-  padding: 2px;
-  background-color: gray; }
+  background-color: white;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+  display: inline-block; }
+  .user .other-user-icon {
+    padding: 5px; }
+    .user .other-user-icon img {
+      margin: 0; }
+  .user .text {
+    padding: 5px; }
 
 /*# sourceMappingURL=main.css.map */
