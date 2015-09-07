@@ -11,11 +11,12 @@
 	}
 
 	overflow-y:hidden;
-	padding-top:10px;
-	padding-bottom:10px;
+	// padding-top:10px;
+	// padding-bottom:10px;
 	padding-right:0;
 	padding-left:0;
 	z-index:100;
+
 
 }
 
@@ -25,12 +26,16 @@
 	border:0;
 }
 
-.sidebar-control{
+.filterbar-control{
 	// display:none;
 	text-align:center;
 	cursor: pointer;
 	color:$theme-color;
-	padding-top:10px;
+	box-shadow:$dropshadow-filter;
+	@media (min-width:$tablet-min-width){
+		padding-top:10px;
+	}
+	
 }
 
 

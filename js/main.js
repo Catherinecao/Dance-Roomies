@@ -11,7 +11,7 @@ $(document).ready(function(){
 		$sideBar = $('.sidebar'),
 		$filterBarHeight = $filterBar.height();
 		$filterTabletHeight = $filterTablet.height();
-		$filterBarControl = $('.sidebar-control'),
+		$filterBarControl = $('.filterbar-control'),
 		$windowWidth = $(window).innerWidth(),
 		$eventDetail = $('.detail-info'),
 		$detailBtn = $('.details'),
@@ -35,7 +35,7 @@ $(document).ready(function(){
 		//filterSlide
 		if ($windowWidth < 768 ){
 			//mobile
-			$sideBar.transition({ y: -$filterBarHeight-30 , delay:filterdelayTime, easing: "easeInOutQuart"});
+			$sideBar.transition({ y: -$filterBarHeight-5 , delay:filterdelayTime, easing: "easeInOutQuart"});
 
 		}else{
 			//tablet & desktop
@@ -89,13 +89,13 @@ $(document).ready(function(){
 		function filterBarShow(){
 
 			if (filterShow === false ){
-				$sideBar.transition({ y: $filterBarHeight/4-30,  easing: "easeInOutQuart"});
+				$sideBar.transition({ y: 0,  easing: "easeInOutQuart"});
 
 				filterShow = true;
 				
 			} else {
 		
-				$sideBar.transition({ y: -$filterBarHeight-30 ,  easing: "easeInOutQuart"});
+				$sideBar.transition({ y: -$filterBarHeight-5 ,  easing: "easeInOutQuart"});
 			 	filterShow = false;
 			}		
 		}
