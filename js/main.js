@@ -57,7 +57,7 @@ $(document).ready(function(){
 			if ($windowWidth < 768) {
 				filterBarShow();
 			}else{
-				filterSlide();
+				$filterTablet.slideToggle();
 			}
 			
 		});
@@ -100,22 +100,7 @@ $(document).ready(function(){
 			}		
 		}
 
-		//tablet
 
-		function filterSlide(){
-			if (filterShow === false ){
-				
-				$filterTablet.velocity("slideDown",{duration: scrollTime, easing:"easeInOutQuart"});
-
-				filterShow = true;
-				
-			} else {
-
-				$filterTablet.velocity("slideUp",{duration: scrollTime, easing:"easeInOutQuart"});
-			 	filterShow = false;
-			}		
-		}
-		
 
 		function scrollhideMobileMenu(){
 

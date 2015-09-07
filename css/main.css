@@ -230,11 +230,21 @@ img {
 .what-is-dance-roomies hr {
   margin-top: 10px; }
 
-.sign-in-fb {
+.sign-up-fb p {
+  font-size: 20px;
+  margin-top: 30px; }
+.sign-up-fb .sign-in-fb {
   background-color: #3b5998;
   color: white;
   border-radius: 30px;
-  font-size: 18px; }
+  font-size: 18px;
+  margin: 0.5em 0;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); }
+  .sign-up-fb .sign-in-fb:hover {
+    background-color: #8b9dc3;
+    color: white;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color  0.2s, text-shadow 0.2s, color 0.2s,  box-shadow 0.2s, easing-in-out; }
 
 .line {
   border: 2px solid #8B1D3F; }
