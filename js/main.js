@@ -14,7 +14,7 @@ $(document).ready(function(){
 		$filterBarControl = $('.filterbar-control'),
 		$windowWidth = $(window).innerWidth(),
 		$eventDetail = $('.detail-info'),
-		$detailBtn = $('.details'),
+		$detailBtn = $('.details, .add-team, .create-new-team'),
 		filterShow = false,
 		scrollTime = 400,
 		filterdelayTime = 1200;
