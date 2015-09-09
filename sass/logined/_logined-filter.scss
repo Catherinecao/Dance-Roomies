@@ -7,15 +7,6 @@
 
 }
 
-.mobile{
-	@media (min-width:$tablet-min-width){
-		display: none;
-	}
-}
-
-.tablet{
-	display:none;
-}
 
 .filter-item{
 	padding:5px;
