@@ -39,7 +39,7 @@ $(document).ready(function(){
 
 		}else{
 			//tablet & desktop
-			
+			$filterTablet.hide();
 		}
 		
 

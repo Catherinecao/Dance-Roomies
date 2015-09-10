@@ -10,6 +10,9 @@
 	border:1px solid $light-gray;
 	padding: 5px 5px;
 	box-shadow:1px 1px 4px transparentize(black,0.8) inset;	
+	input:focus{
+		box-shadow:none;
+	}
 }
 
 .search-icon{
@@ -20,7 +23,10 @@
 }
 
 .hover, .active{
-	color:$light-theme;
+	a{
+		color:$light-theme;
+	}
+	
 	transition: background-color 0.2s, easing-in-out;
 }
 

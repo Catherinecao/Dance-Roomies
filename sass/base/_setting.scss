@@ -65,8 +65,32 @@ ul{
     // padding-left:percentage(2/100);
   }
 }
+.tabs{
+  border-top:$border;
+  padding:6px 15px;
+}
 .tab{
-  border:$border;
-  padding:5px 10px;
+  border:$boder-tab;
+  padding:2px 5px;
   border-radius: 3px;
+  font-size: 10px;
+  margin-bottom: 5px;
+  font-family: 'Raleway', sans-serif;
+  color:$white;
+  box-shadow:$dropshadow-inset;
+}
+.tab-salsa{
+  background-color:$color-salsa;
+}
+.tab-bachata{
+  background-color:$color-bachata;
+}
+.tab-cha-cha{
+  background-color:$color-cha-cha;
+}
+.tab-zouk{
+  background-color:$color-zouk;
+}
+.tab-kizomba{
+  background-color:$color-kizomba;
 }
