@@ -685,7 +685,27 @@ img {
     .user .other-user-icon img {
       margin: 0; }
   .user .text {
-    padding: 5px; }
+    padding: 10px;
+    background-color: yellow; }
+  .user .user-details {
+    display: none;
+    margin: 0;
+    float: right;
+    border-top: 1px solid rgba(128, 128, 128, 0.25);
+    padding: 10px 10px; }
+    .user .user-details .ideal {
+      border-top: 1px solid rgba(128, 128, 128, 0.25);
+      margin-top: 10px;
+      padding-top: 10px; }
+
+.btn-message {
+  float: right;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 12px;
+  padding: 3px 10px; }
+
+.user-toggle {
+  cursor: pointer; }
 
 .personal-info {
   border-radius: 3px;

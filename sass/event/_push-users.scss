@@ -14,6 +14,31 @@
   	}
   }
   .text{
-  	padding:5px;
+  	padding:10px;
+    background-color:yellow;
   }
+
+  .user-details{
+    display: none;
+    margin:0;
+    float:right;
+    border-top:$border;
+    padding:10px 10px;
+    .ideal{
+      border-top:$border;
+      margin-top: 10px;
+      padding-top:10px;
+    }
+    
+  }
+}
+
+.btn-message{
+  float: right;
+  border:$border;
+  border-radius:12px;
+  padding:3px 10px;
+}
+.user-toggle{
+  cursor: pointer;
 }

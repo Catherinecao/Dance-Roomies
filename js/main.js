@@ -15,6 +15,7 @@ $(document).ready(function(){
 		$windowWidth = $(window).innerWidth(),
 		$eventDetail = $('.detail-info'),
 		$detailBtn = $('.details, .add-team, .create-new-team'),
+		$userToggle = $('.user-toggle'),
 		filterShow = false,
 		scrollTime = 400,
 		filterdelayTime = 1200;
@@ -77,7 +78,11 @@ $(document).ready(function(){
 		});
 
 		
-			
+		//push user's info
+		$userToggle.click(function(e){
+			e.preventDefault();
+			$(this).next().slideToggle();
+		});	
 
 			
 
