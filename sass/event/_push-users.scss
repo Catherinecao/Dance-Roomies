@@ -1,5 +1,5 @@
 .pushed-users{
-	width:100%;
+margin-top: 20px;
 }
 .user{
 
@@ -19,6 +19,7 @@
   }
 
   .user-details{
+    text-align: left;
     display: none;
     margin:0;
     float:right;
@@ -28,17 +29,19 @@
       border-top:$border;
       margin-top: 10px;
       padding-top:10px;
-    }
-    
+    }    
   }
 }
 
 .btn-message{
   float: right;
-  border:$border;
-  border-radius:12px;
+  border:2px solid $orange;
+  color:$orange;
+  border-radius:15px;
   padding:3px 10px;
 }
 .user-toggle{
   cursor: pointer;
+  padding:0;
+  text-align: left;
 }

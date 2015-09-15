@@ -147,7 +147,7 @@ body h1 {
   font-family: 'Italiana', serif; }
 body h3 {
   font-family: 'Italiana', serif; }
-body p, body a {
+body p, body a, body li {
   font-family: 'Raleway', sans-serif;
   font-size: 1em; }
 body .navbar-brand {
@@ -670,11 +670,14 @@ img {
     margin-top: 15px; }
   .single-event .border-bottom {
     border: 1px solid rgba(128, 128, 128, 0.25); }
-  .single-event p {
+  .single-event p, .single-event .feature {
     color: gray; }
+  .single-event .event-info, .single-event .discription, .single-event .feature {
+    padding-top: 10px;
+    padding-bottom: 10px; }
 
 .pushed-users {
-  width: 100%; }
+  margin-top: 20px; }
 
 .user {
   background-color: white;
@@ -688,6 +691,7 @@ img {
     padding: 10px;
     background-color: yellow; }
   .user .user-details {
+    text-align: left;
     display: none;
     margin: 0;
     float: right;
@@ -700,12 +704,15 @@ img {
 
 .btn-message {
   float: right;
-  border: 1px solid rgba(128, 128, 128, 0.25);
-  border-radius: 12px;
+  border: 2px solid #FF9800;
+  color: #FF9800;
+  border-radius: 15px;
   padding: 3px 10px; }
 
 .user-toggle {
-  cursor: pointer; }
+  cursor: pointer;
+  padding: 0;
+  text-align: left; }
 
 .personal-info {
   border-radius: 3px;
