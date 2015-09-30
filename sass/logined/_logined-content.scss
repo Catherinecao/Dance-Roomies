@@ -26,11 +26,11 @@
 			// background-color:$light-pink;
 
 			h3{
-				display: inline-block;
+				padding-right:0;
 			}
 
 			.add-to-calender{
-				margin-top: 15px;
+				margin-top: 20px;
 				display: inline-block;
 				color:$theme-color;
 				float: right;
@@ -55,7 +55,9 @@
 		.title{
 			color:$white;
 			text-shadow: $dropshadow-hover;
-
+			.add-to-calender{
+				color:$light-theme;
+			}
 		}
 		
 		.border-bottom{
@@ -66,7 +68,43 @@
 		}
 		transition-timing-function: ease-in-out;
 		-webkit-transition: box-shadow 0.1s, background-color 0.1s;
-		transition:  box-shadow 0.1s, background-color 0.1s;
+		transition:  box-shadow 0.1s, background-color 0.2s;
+	}	
+}
+.message{
+	display:none;
+	position:fixed;
+	margin-top:30vh;
+	text-align:center;
+	padding:0;
+
+	.shadow{
+		display: inline-block;
+		img{
+
+			margin-top:-1px;
+			width: 100%;
+			opacity:0.7;
+		}
+
 	}
+
+	.bg{
+		@include linear-gradient(to right,transparentize($white,1),$white,transparentize($white,1));
+
+		color:$light-theme;
+		padding:30px 0;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+
+		h3{
+			margin: 0;
+			text-shadow: $dropshadow-text;
+		}
+		
+	}
+	// background-color:$background-color-message;
+	// margin-right:15px;
 	
 }

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +29,7 @@
       </button>
 
       
-      <a class="navbar-brand" href="index.php">Dance Roomies</a>
+      <a class="navbar-brand" href="<?php echo index; ?>"><strong>Dance Roomies</strong></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -35,14 +37,23 @@
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group search">
           <i type="submit" class="fa fa-search"></i>
-          <input type="text" class="form-control" placeholder="Search"> 
+          <input type="text" class="form-control" > 
         </div>
       </form>
 
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Explore <span class="sr-only">(current)</span></a></li>
-        <li><a href="#" id="guest">Sign In</a></li>
-        <li><a href="#" id="guest">Help</a></li>
+        <li class="active">
+          <a href="<?php echo get_page_link(43); ?>">Explore <span class="sr-only">(current)</span></a>
+        </li>
+        <?php if (!is_user_logged_in()){ ?>
+          <li>
+            <a href="<?php echo get_page_link(41); ?>" id="guest">Login</a>
+          </li>
+          <?php }else{ ?>
+        <li>
+          <a href="<?php echo wp_logout_url(home_url()); ?>">Logout</a>
+        </li>
+        <?php } ?>
       </ul>
       
     </div><!-- /.navbar-collapse -->

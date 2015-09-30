@@ -16,7 +16,10 @@ $(document).ready(function(){
 		$eventDetail = $('.detail-info'),
 		$detailBtn = $('.details, .add-team, .create-new-team'),
 		$userToggle = $('.user-toggle'),
+		$addEvents= $('.add-to-calender'),
+		$successMessage = $('.message'),
 		filterShow = false,
+		showTime = 300,
 		scrollTime = 400,
 		filterdelayTime = 1200;
 
@@ -84,6 +87,21 @@ $(document).ready(function(){
 			$(this).next().slideToggle();
 		});	
 
+		$addEvents.click(function(e){
+			e.preventDefault();
+			$successMessage.fadeIn();
+
+			var eventId = $(this).data('id'),
+				data = {action: 'addEventToCalandar', eventId: eventId}
+
+			$.post(siteInfo.ajaxURL, data, function(success){
+				// alert(success);
+			})
+			//alert(eventId);
+			$successMessage.fadeOut({duration:5000,delay:5000});
+
+		})
+
 			
 
 		function scrollToIntro(){
@@ -104,7 +122,6 @@ $(document).ready(function(){
 			 	filterShow = false;
 			}		
 		}
-
 
 
 		function scrollhideMobileMenu(){

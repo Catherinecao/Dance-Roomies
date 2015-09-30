@@ -14,7 +14,7 @@
 	</div>
 
 	<div class="col-md-12">
-		<a class="btn sign-in" href="#" id="sign-in"><strong>Start your journey</strong></a>
+		<a class="btn sign-in" href="<?php echo get_page_link(41); ?>" id="sign-in"><strong>Log In</strong></a>
 	</div>
 
 	<div class="col-md-12">
@@ -77,7 +77,7 @@
 			</div>
 
 		<div class="col-md-12">
-		<a class="btn start" href="#" id="sign-in"><strong>FREE to join us</strong></a>
+		<a class="btn start" href="<?php echo get_page_link(45); ?>"><strong>FREE to join us</strong></a>
 	</div>
 	</div>
 

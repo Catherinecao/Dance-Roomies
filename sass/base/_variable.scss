@@ -41,6 +41,7 @@ $color-kizomba:$darker-orange;
 
 
 
+
 $background-color-start:$orange;
 $background-gray:transparentize($gray,0.95);
 
@@ -50,6 +51,7 @@ $dropshadow:1px 2px 5px transparentize(black,0.7);
 $dropshadow-nav:1px 8px 10px transparentize(black,0.8);
 $dropshadow-menu:1px -2px 5px transparentize(black,0.85);
 $dropshadow-text:1px 2px 5px transparentize(black,0.8);
+$dropshadow-message:1px 1px 20px 1px transparentize(black,0.7);
 $dropshadow-point:1px 1px 2px transparentize(black,0.75);
 $dropshadow-card:1px 2px 5px transparentize(black,0.9);
 $dropshadow-hover:1px 5px 10px transparentize(black,0.7);
@@ -69,3 +71,5 @@ $background-color-lable:$white;
 $background-color-filter:$white;
 $circle-text-color:$white;
 $hr-border:2px solid transparentize($gray,0.85);
+$background-color:transparentize($gray,0.8);
+$background-color-message:linear-gradient(to right,transparentize($white,0.9),$white,transparentize($white,0.9));

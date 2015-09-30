@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(128, 128, 128, 0.05);
+  background-color: rgba(128, 128, 128, 0.2);
   box-sizing: border-box;
   margin: 0;
   padding-top: 50px; }
@@ -306,6 +306,128 @@ img {
   margin: 15px 0;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset; }
 
+.waiting {
+  display: none; }
+
+.pods-form-fields {
+  margin-top: 30px;
+  list-style: none;
+  padding: 0; }
+  .pods-form-fields .pods-field-input input {
+    font-size: 16px;
+    height: 40px;
+    line-height: 2px;
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    padding: 5px;
+    margin: 15px 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
+    width: 80%;
+    border-radius: 5px; }
+    @media (min-width: 768px) {
+      .pods-form-fields .pods-field-input input {
+        width: 50%; } }
+
+.pods-submit-button {
+  text-align: center;
+  margin-top: 1.5em;
+  border: 2px solid #D72D62;
+  padding: 0.5em 2em;
+  background-color: white;
+  white-space: normal;
+  border-radius: 20px;
+  color: #D72D62;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  border-radius: 30px; }
+  @media (min-width: 768px) {
+    .pods-submit-button {
+      margin-top: 3em; } }
+  @media (min-width: 992px) {
+    .pods-submit-button {
+      margin-top: 3em; } }
+  .pods-submit-button a {
+    margin: 0 auto; }
+  .pods-submit-button:hover {
+    background-color: #D72D62;
+    color: white;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color  0.2s, text-shadow 0.2s, color 0.2s,  box-shadow 0.2s, easing-in-out; }
+
+.button-primary {
+  text-align: center;
+  margin-top: 1.5em;
+  border: 2px solid #D72D62;
+  padding: 0.5em 2em;
+  background-color: white;
+  white-space: normal;
+  border-radius: 20px;
+  color: #D72D62;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  border-radius: 30px; }
+  @media (min-width: 768px) {
+    .button-primary {
+      margin-top: 3em; } }
+  @media (min-width: 992px) {
+    .button-primary {
+      margin-top: 3em; } }
+  .button-primary a {
+    margin: 0 auto; }
+  .button-primary:hover {
+    background-color: #D72D62;
+    color: white;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color  0.2s, text-shadow 0.2s, color 0.2s,  box-shadow 0.2s, easing-in-out; }
+
+.register {
+  margin-top: 50px; }
+
+.button-new-user {
+  text-align: center;
+  border: 2px solid #FF9800;
+  padding: 0.5em 2em;
+  background-color: #FF9800;
+  white-space: normal;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  border-radius: 30px; }
+  @media (min-width: 768px) {
+    .button-new-user {
+      margin-top: 3em; } }
+  @media (min-width: 992px) {
+    .button-new-user {
+      margin-top: 3em; } }
+  .button-new-user a {
+    margin: 0 auto; }
+  .button-new-user:hover {
+    background-color: white;
+    color: #FF9800;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color  0.2s, text-shadow 0.2s, color 0.2s,  box-shadow 0.2s, easing-in-out; }
+
+#loginform-custom {
+  margin-top: 30px; }
+  #loginform-custom p label {
+    width: 100%; }
+  #loginform-custom p .input {
+    font-size: 16px;
+    height: 40px;
+    line-height: 2px;
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    padding: 5px;
+    margin: 15px 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
+    width: 80%;
+    border-radius: 5px; }
+    @media (min-width: 768px) {
+      #loginform-custom p .input {
+        width: 50%; } }
+
 .sidebar {
   position: fixed;
   top: 50px;
@@ -390,9 +512,9 @@ img {
       display: inline;
       color: #8B1D3F; }
       .card .blur .title h3 {
-        display: inline-block; }
+        padding-right: 0; }
       .card .blur .title .add-to-calender {
-        margin-top: 15px;
+        margin-top: 20px;
         display: inline-block;
         color: #8B1D3F;
         float: right; }
@@ -406,17 +528,45 @@ img {
     background-color: rgba(0, 0, 0, 0.7);
     transition-timing-function: ease-in-out;
     -webkit-transition: box-shadow 0.1s, background-color 0.1s;
-    transition: box-shadow 0.1s, background-color 0.1s; }
+    transition: box-shadow 0.1s, background-color 0.2s; }
     .card:hover .title {
       color: white;
       text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3); }
+      .card:hover .title .add-to-calender {
+        color: #D72D62; }
     .card:hover .border-bottom {
       border-color: #D72D62; }
     .card:hover p {
       color: rgba(255, 255, 255, 0.7); }
 
+.message {
+  display: none;
+  position: fixed;
+  margin-top: 30vh;
+  text-align: center;
+  padding: 0; }
+  .message .shadow {
+    display: inline-block; }
+    .message .shadow img {
+      margin-top: -1px;
+      width: 100%;
+      opacity: 0.7; }
+  .message .bg {
+    background: rgba(255, 255, 255, 0);
+    background: -webkit-linear-gradient(legacy-direction(to right), rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0));
+    color: #D72D62;
+    padding: 30px 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+    .message .bg h3 {
+      margin: 0;
+      text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2); }
+
 .infoBar {
   margin-top: 10px;
+  margin-bottom: 10px;
   background-color: white;
   border-radius: 3px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
@@ -714,31 +864,92 @@ img {
   padding: 0;
   text-align: left; }
 
-.personal-info {
+.user-profile, .user-teams, .user-calander, .message-box {
   border-radius: 3px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
   background-color: white;
-  margin-right: -15px;
-  margin-left: -15px; }
-  @media (min-width: 768px) {
-    .personal-info {
-      margin-right: 0;
-      margin-left: 0; } }
-  .personal-info .uesr-img img {
-    width: 100%;
-    border: 2px solid white;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1); }
-  @media (min-width: 768px) {
-    .personal-info .uesr-img {
-      padding: 5px; } }
-  .personal-info .info {
-    margin-top: 10px;
+  margin-bottom: 3px; }
+
+.user-sefi img {
+  border: 5px solid white;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25); }
+
+.user-calander {
+  display: inline-block; }
+  .user-calander h3 {
+    color: #8B1D3F; }
+  .user-calander .line {
+    height: 3px;
+    width: 40%;
+    background-color: #8B1D3F;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border: 0; }
+
+.latest-event {
+  display: inline-block;
+  padding: 5px 0;
+  width: 100%;
+  color: #D72D62; }
+  .latest-event p {
+    font-size: 20px; }
+  .latest-event .date {
+    float: left;
+    text-align: right;
+    display: block;
+    width: 40%;
+    padding-right: 20px; }
+  .latest-event .event-name {
+    border-left: 1px solid rgba(128, 128, 128, 0.25);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+    text-align: left;
+    display: block;
+    width: 60%;
     float: right;
-    padding-left: 0; }
-    .personal-info .info .row {
-      border-bottom: 1px solid rgba(128, 128, 128, 0.25); }
-      .personal-info .info .row p {
-        margin: 0;
-        padding: 5px 0; }
+    padding-left: 20px; }
+
+.upcoming-event {
+  display: inline-block;
+  padding: 5px 0;
+  width: 100%;
+  color: #8B1D3F; }
+  .upcoming-event .latest {
+    color: #D72D62; }
+  .upcoming-event:last-child {
+    color: black; }
+  .upcoming-event p {
+    font-size: 20px; }
+  .upcoming-event .date {
+    float: left;
+    text-align: right;
+    display: block;
+    width: 40%;
+    padding-right: 20px; }
+  .upcoming-event .event-name {
+    border-left: 1px solid rgba(128, 128, 128, 0.25);
+    text-align: left;
+    display: block;
+    width: 60%;
+    float: right;
+    padding-left: 20px; }
+
+.message-box {
+  display: inline-block; }
+  .message-box h3 {
+    width: 100%;
+    color: #8B1D3F;
+    text-align: center; }
+  .message-box .new-message {
+    display: inline-block;
+    width: 100%; }
+  .message-box .line {
+    height: 3px;
+    width: 40%;
+    background-color: #8B1D3F;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border: 0; }
 
 /*# sourceMappingURL=main.css.map */
